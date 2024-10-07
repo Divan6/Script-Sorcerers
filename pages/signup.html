@@ -92,26 +92,57 @@
                
         <div class="rectangle-div">
             <form id="contact" name="signUp">
-                <div class="sign-up">Sign up</div>
-                <div class="nihonnet">Nihon.net</div>
+                <!-- <div class="sign-up">Sign up</div>
+                <div class="nihonnet">Nihon.net</div> -->
+				<p class="sign-up">Sign up</p>
+				<p class="nihonnet">Nihon.net</p>
+
+				<div class="socials">
+					<img class="frame-child14" alt="" src="../assets/images/twitter.png">
+    		
+    				<img class="frame-child15" alt="" src="../assets/images/facebook.png">
+    		
+    				<img class="frame-child16" alt="" src="../assets/images/social.png">
+    		
+    				<img class="frame-child17" alt="" src="../assets/images/104447_apple_logo_icon.png">
+				</div>
 
                 <br>
                 <!-- <label for="Abc@def.com">Email Address</label> -->
+				<div class="flex">
+					<div class="fname">
+                    	<fieldset>
+                        	<input placeholder="Full Name" type="name" tabindex="1" required>
+                    	</fieldset>
+					</div>
+                	
+					<div class="uname">
+                    	<fieldset>
+                        	<input placeholder="Username" name="username" type="text" tabindex="2" required>
+                    	</fieldset>
+					</div>
+				</div>
+                
+				<div class="mail">
                     <fieldset>
-                        <input placeholder="Email Address" type="email" tabindex="1" required>
+                        <input placeholder="Email Address" name="email" type="text" tabindex="3" required>
                     </fieldset>
-                <!-- <label for="Abc">Full Name</label> -->
-                    <fieldset>
-                        <input placeholder="Full Name" name="name" type="text" tabindex="2">
-                    </fieldset>
-                <!-- <label for="user">Username</label> -->
-                    <fieldset>
-                        <input placeholder="Username" name="username" type="text" tabindex="3">
-                    </fieldset>
+				</div>
+
+				<div class="pswd">
+					<fieldset>
+						<input placeholder="Password" name="password" type="password" tabindex="4" required>
+					</fieldset>
+
+					<fieldset>
+						<input placeholder="Confirm password" name="cnfm" type="password" tabindex="5" required>
+					</fieldset>
+				</div>
 
                     <fieldset>
                         <button name="Create Account">Create Account</button>
                     </fieldset>
+					
             
             </form>
         </div>
