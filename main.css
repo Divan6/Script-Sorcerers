@@ -1,0 +1,365 @@
+.frame-child {
+    position: absolute;
+    top: 393px;
+    left: 350px;
+    filter: blur(120px);
+    border-radius: 50%;
+    background-color: #e70114;
+    width: 368px;
+    height: 368px;
+}
+.frame-item {
+    position: absolute;
+    top: -24px;
+    left: 426px;
+    filter: blur(80px);
+    border-radius: 50%;
+    background-color: #ffb7c6;
+    width: 465px;
+    height: 465px;
+}
+.frame-inner {
+    position: absolute;
+    top: -35px;
+    left: 732px;
+    filter: blur(100px);
+    border-radius: 50%;
+    background-color: #1b1b1b;
+    width: 741px;
+    height: 740px;
+}
+.ellipse-div {
+    position: absolute;
+    top: 593px;
+    left: 358px;
+    filter: blur(120px);
+    border-radius: 50%;
+    background-color: #1b1b1b;
+    width: 753px;
+    height: 752px;
+}
+.frame-child1 {
+    position: absolute;
+    top: 507px;
+    left: 658px;
+    filter: blur(150px);
+    border-radius: 50%;
+    background-color: #ff8010;
+    width: 442px;
+    height: 442px;
+}
+.group-icon {
+    position: absolute;
+    top: -58px;
+    left: -88px;
+    width: 2093px;
+    height: 1362px;
+}
+.frame-child2 {
+    position: absolute;
+    top: 597px;
+    left: 1025px;
+    filter: blur(100px);
+    border-radius: 50%;
+    background-color: #ffb6c5;
+    width: 518px;
+    height: 518px;
+}
+.deathNoteP {
+    position: absolute;
+    top: 263.53px;
+    left: 1207.35px;
+    width: 287px;
+    /* height: 453.6px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.blackCloverP {
+    position: absolute;
+    top: 468.99px;
+    left: 1494.56px;
+    width: 287px;
+    /* height: 443.8px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.myHeroP {
+    position: absolute;
+    top: 707.87px;
+    left: 1167.05px;
+    width: 287px;
+    /* height: 474.9px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.spyFamilyP {
+    position: absolute;
+    top: -253px;
+    left: 642.03px;
+    width: 287px;
+    /* height: 474.1px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.hunterHunterP {
+    position: absolute;
+    top: 901.37px;
+    left: 1456.31px;
+    width: 287px;
+    /* height: 453.2px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.haikyuP {
+    position: absolute;
+    top: 634.68px;
+    left: 567px;
+    width: 287px;
+    /* height: 453.2px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.jujutsuP {
+    position: absolute;
+    top: 206.77px;
+    left: 605.59px;
+    width: 287px;
+    /* height: 442.2px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.attackTitanP {
+    position: absolute;
+    top: 900.04px;
+    left: 852.66px;
+    width: 287px;
+    /* height: 435.2px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.onePunchP {
+    position: absolute;
+    top: -42.56px;
+    left: 927.95px;
+    width: 287px;
+    /* height: 474.1px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.onTitanP {
+    position: absolute;
+    top: -185.79px;
+    left: 1245.79px;
+    width: 287px;
+    /* height: 458.9px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.demonSlayerP {
+    position: absolute;
+    top: 2.73px;
+    left: 1532.3px;
+    width: 287px;
+    /* height: 474.1px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.onePieceP {
+    position: absolute;
+    top: 428.77px;
+    left: 889.59px;
+    width: 287px;
+    /* height: 433.9px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+/* .rectangle-div {
+    position: absolute;
+    top: 197px;
+    left: 156px;
+    border-radius: 32px;
+    background-color: rgba(255, 255, 255, 0.59);
+    width: 457px;
+    height: 686px;
+}
+.group-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 309px;
+    height: 45px;
+}
+.email-address {
+    position: absolute;
+    top: 15px;
+    left: 19px;
+}
+.rectangle-parent {
+    position: absolute;
+    top: 570px;
+    left: 230px;
+    width: 309px;
+    height: 45px;
+} */
+.group-item {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 151px;
+    height: 45px;
+}
+.rectangle-group {
+    position: absolute;
+    top: 513px;
+    left: 230px;
+    width: 151px;
+    height: 45px;
+}
+.username {
+    position: absolute;
+    top: 15px;
+    left: 22px;
+}
+.rectangle-container {
+    position: absolute;
+    top: 513px;
+    left: 388px;
+    width: 151px;
+    height: 45px;
+}
+.group-div {
+    position: absolute;
+    top: 644px;
+    left: 230px;
+    width: 309px;
+    height: 45px;
+}
+.rectangle-parent1 {
+    position: absolute;
+    top: 702px;
+    left: 230px;
+    width: 309px;
+    height: 45px;
+}
+.group-child3 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 8px;
+    background-color: #000;
+    width: 183px;
+    height: 39px;
+}
+.create-account {
+    position: absolute;
+    top: 11px;
+    left: 36px;
+    font-weight: 500;
+}
+.rectangle-parent2 {
+    position: absolute;
+    top: 767px;
+    left: 230px;
+    width: 183px;
+    height: 39px;
+    font-size: 15px;
+    color: #fff;
+}
+.sign-up {
+    position: absolute;
+    top: 310px;
+    left: 230px;
+    font-size: 64px;
+    font-weight: 600;
+    color: #000;
+    display: inline-block;
+    width: 267px;
+    height: 84px;
+}
+.nihonnet {
+    position: absolute;
+    top: 258px;
+    left: 230px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #000;
+    display: inline-block;
+    width: 195px;
+    height: 47px;
+}
+.frame-child14 {
+    position: absolute;
+    top: 402px;
+    left: 230px;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.frame-child15 {
+    position: absolute;
+    top: 402px;
+    left: 330px;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.frame-child16 {
+    position: absolute;
+    top: 402px;
+    left: 280px;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.frame-child17 {
+    position: absolute;
+    top: 399px;
+    left: 378px;
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
+.ellipse-parent {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    height: 1080px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 13px;
+    color: #808080;
+    font-family: Inter;
+}
+
+#contact {
+    position: absolute;
+    top: 197px;
+    left: 156px;
+    border-radius: 32px;
+    background-color: rgba(255, 255, 255, 0.59);
+    width: 457px;
+    height: 686px;
+}
+
+fieldset {
+    min-width: 100%;
+    width: 100%;
+
+}
+
+#contact input, #contact textarea{
+    width: 100%;
+    border: 1px solid #808080;
+    background-color: #fff;
+
+}
+
+#contact textarea{
+    height: 100px;
+    max-width: fit-content;
+    
+}
