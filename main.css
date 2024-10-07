@@ -1,0 +1,131 @@
+/* Basic resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFB7C5;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.login-download {
+    margin-top: 10px;
+    color: #fff;
+}
+
+.login-download a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Banner section */
+.banner {
+    background-color: #444;
+    color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.banner p {
+    font-size: 1.2rem;
+}
+
+/* Carousel styling */
+.carousel-section {
+    margin: 2rem 0;
+}
+
+.carousel-caption h5 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.1rem;
+}
+
+/* Products section */
+.products {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.products p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+footer .address,
+footer .footer-links {
+    margin-bottom: 1rem;
+}
+
+footer .footer-links a {
+    color: #fff;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+footer .newsletter form {
+    margin-top: 1rem;
+}
+
+footer input[type="email"] {
+    padding: 0.5rem;
+}
+
+footer button {
+    padding: 0.5rem 1rem;
+    background-color: #444;
+    color: #fff;
+    border: none;
+}
+
+footer .copyright {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
