@@ -207,7 +207,7 @@ body{
     width: 309px;
     height: 45px;
 } */
-.group-item {
+/* .group-item {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -215,41 +215,41 @@ body{
     background-color: #fff;
     width: 151px;
     height: 45px;
-}
-.rectangle-group {
+} */
+/* .rectangle-group {
     position: absolute;
     top: 513px;
     left: 230px;
     width: 151px;
     height: 45px;
-}
-.username {
+} */
+/* .username {
     position: absolute;
     top: 15px;
     left: 22px;
-}
-.rectangle-container {
+} */
+/* .rectangle-container {
     position: absolute;
     top: 513px;
     left: 388px;
     width: 151px;
     height: 45px;
-}
-.group-div {
+} */
+/* .group-div {
     position: absolute;
     top: 644px;
     left: 230px;
     width: 309px;
     height: 45px;
-}
-.rectangle-parent1 {
+} */
+/* .rectangle-parent1 {
     position: absolute;
     top: 702px;
     left: 230px;
     width: 309px;
     height: 45px;
-}
-.group-child3 {
+} */
+/* .group-child3 {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -257,14 +257,14 @@ body{
     background-color: #000;
     width: 183px;
     height: 39px;
-}
-.create-account {
+} */
+/* .create-account {
     position: absolute;
     top: 11px;
     left: 36px;
     font-weight: 500;
-}
-.rectangle-parent2 {
+} */
+/* .rectangle-parent2 {
     position: absolute;
     top: 767px;
     left: 230px;
@@ -272,7 +272,7 @@ body{
     height: 39px;
     font-size: 15px;
     color: #fff;
-}
+} */
 /* .sign-up {
     position: absolute;
     top: 210px;
@@ -295,64 +295,60 @@ body{
     width: 195px;
     height: 47px;
 } */
-.frame-child14 {
-    /* position: absolute; */
-    /* top: 402px;
-    left: 230px; */
+/* .frame-child14 {
+    position: absolute;
+    top: 402px;
+    left: 230px;
     width: 30px;
     height: 30px;
     object-fit: cover;
-}
-.frame-child15 {
-    /* position: absolute; */
-    /* top: 402px;
-    left: 330px; */
+} */
+/* .frame-child15 {
+    position: absolute;
+    top: 402px;
+    left: 330px;
     width: 30px;
     height: 30px;
     object-fit: cover;
-}
-.frame-child16 {
-    /* position: absolute; */
-    /* top: 402px;
-    left: 280px; */
+} */
+/* .frame-child16 {
+    position: absolute;
+    top: 402px;
+    left: 280px;
     width: 30px;
     height: 30px;
     object-fit: cover;
-}
-.frame-child17 {
-    /* position: absolute; */
-    /* top: 399px;
-    left: 378px; */
+} */
+/* .frame-child17 {
+    position: absolute;
+    top: 399px;
+    left: 378px;
     width: 35px;
     height: 35px;
     object-fit: cover;
-}
-
-.socials{
-    padding-left: 74px;
-    justify-content: space-around;
-}
+} */
 
 .ellipse-parent {
     width: 100%;
-    position: relative;
+    position: absolute;
     background-color: #fff;
-    height: 1080px;
+    height: 67.5rem;
     overflow: hidden;
     text-align: left;
     font-size: 13px;
     color: #808080;
-    font-family: Inter;
+    font-family: "Noto Sans JP", sans-serif;
 }
 
 #contact {
     position: absolute;
-    top: 197px;
-    left: 156px;
+    top: 12.313rem;
+    left: 9.75rem;
     border-radius: 32px;
     background-color: rgba(255, 255, 255, 0.59);
-    width: 457px;
-    height: 686px;
+    width: 23.938rem;
+    height: 42.875rem;
+    padding-left: 4.625rem;
     /* padding: 1em 2em; */
 }
 
@@ -360,8 +356,7 @@ fieldset {
     /* min-width: 100%; */
     /* width: 100%; */
     border: none;
-    /* height: 45px; */
-    padding-left: 74px;
+    /* margin-bottom: 10px; */
 }
 
 #contact input, #contact textarea{
@@ -371,78 +366,118 @@ fieldset {
     height: 45px;
     border-radius: 8px;
     border: none;
+    /* padding-left: 12px; */
     /* align-items: center; */
 }
 
-#contact textarea{
-    height: 100px;
-}
-
 #contact input, #contact textarea, #contact button{
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
+    font-family: "Noto Sans Jp", sans-serif;
 }
 
 #contact button{
     cursor: pointer;
-    width: 183px;
-    height: 40px;
+    width: 11.438rem;
+    height: 3.125rem;
     border: none;
     background-color: #000;
     color: #fff;
     padding: 10px;
     border-radius: 8px;
     font-weight: 500;
+    font-family: "Noto Sans Jp", sans-serif;
 }
 
 #contact p{
     color: #000;
     display: block;
-    padding-left: 74px;
+    font-family: "Noto Sans Jp", sans-serif;
 }
 
 .nihonnet{
+    font-size: 0;
+    padding: 0%;
+}
+
+.nihonnet p{
     font-weight: 500;
     font-size: 36px;
 }
 
 .sign-up{
+    font-size: 0;
+    padding: 0%;
+}
+
+.sign-up p{
     font-weight: 600;
     font-size: 64px;
 }
 
-.fname{
-    font-size: 0;
-    /* display: flex; */
+
+.names input{
+    width: 9.438rem;
 }
 
-.fname input{
-    display: inline-block;
-    width: 151px;
-    margin: 0%;
-}
-
-.uname{
-    font-size: 0;
-    /* display: flex; */
-}
-
-.uname input{
-    display: inline-block;
-    width: 151px;
-    margin: 0%;
-}
 
 .flex{
     display: flex;
     font-size: 0;
-    /* justify-content: space-between; */
+    margin-bottom: 5px;
+}
+
+
+.pswd{
+    font-size: 0;
+    margin-bottom: 5px;
 }
 
 .pswd input{
-    width: 309px;
+    width: 19.313rem;
+}
+
+.confirmPswd{
+    font-size: 0;
+    margin-bottom: 12px;
+}
+
+.confirmPswd input{
+    width: 19.313rem;
+}
+
+
+.mail{
+    font-size: 0;
+    margin-bottom: 10px;
 }
 
 .mail input{
-    width: 309px;
+    width: 19.313rem;
+}
+
+
+.socials{
+    display: flex;
+    /* padding-left: 74px; */
+}
+
+.iconO{
+    /* width: 30px; */
+    flex: 10%;
+    padding: 0%;
+}
+
+.iconO img{
+    width: 30px;
+    margin: 0%;
+}
+
+.names{
+    display: inline-block;
+    /* width: 151px; */
+}
+
+.button{
+    font-size: 0;
 }

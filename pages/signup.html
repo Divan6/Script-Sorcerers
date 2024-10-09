@@ -1,12 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   	<meta charset="utf-8">
   	<meta name="viewport" content="initial-scale=1, width=device-width">
+
+	  <link rel="stylesheet" href="../main.css">
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+	  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+	  
   	
-  	<link rel="stylesheet"  href="../main.css" />
-  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" />
-  	
+	<!-- <style>
+		.flex {
+			display: flex;
+		}
+
+		.fname, .uname{
+			margin-right: 10px;
+		}
+	</style> -->
   	
   	
 </head>
@@ -94,29 +106,34 @@
             <form id="contact" name="signUp">
                 <!-- <div class="sign-up">Sign up</div>
                 <div class="nihonnet">Nihon.net</div> -->
-				<p class="sign-up">Sign up</p>
-				<p class="nihonnet">Nihon.net</p>
+				<div class="nihonnet"><p>Nihon.net</p></div>
+				<div class="sign-up"><p>Sign up</p></div>
 
 				<div class="socials">
-					<img class="frame-child14" alt="" src="../assets/images/twitter.png">
-    		
-    				<img class="frame-child15" alt="" src="../assets/images/facebook.png">
-    		
-    				<img class="frame-child16" alt="" src="../assets/images/social.png">
-    		
-    				<img class="frame-child17" alt="" src="../assets/images/104447_apple_logo_icon.png">
+					<div class="iconO">
+						<img class="frame-child14" alt="" src="../assets/images/twitter.png">
+					</div>
+					<div class="iconO">
+    					<img class="frame-child15" alt="" src="../assets/images/facebook.png">
+					</div>
+					<div class="iconO">
+    					<img class="frame-child16" alt="" src="../assets/images/social.png">
+					</div>
+					<div class="iconO">
+    					<img class="frame-child17" alt="" src="../assets/images/104447_apple_logo_icon.png">
+					</div>
 				</div>
 
                 <br>
                 <!-- <label for="Abc@def.com">Email Address</label> -->
 				<div class="flex">
-					<div class="fname">
+					<div class="names">
                     	<fieldset>
                         	<input placeholder="Full Name" type="name" tabindex="1" required>
                     	</fieldset>
 					</div>
-                	
-					<div class="uname">
+                
+					<div class="names">
                     	<fieldset>
                         	<input placeholder="Username" name="username" type="text" tabindex="2" required>
                     	</fieldset>
@@ -133,15 +150,18 @@
 					<fieldset>
 						<input placeholder="Password" name="password" type="password" tabindex="4" required>
 					</fieldset>
-
+				</div>
+				<div class="confirmPswd">
 					<fieldset>
 						<input placeholder="Confirm password" name="cnfm" type="password" tabindex="5" required>
 					</fieldset>
 				</div>
-
+				
+				<div class="button">
                     <fieldset>
                         <button name="Create Account">Create Account</button>
                     </fieldset>
+				</div>
 					
             
             </form>
