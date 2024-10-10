@@ -31,6 +31,36 @@ header .logo {
     text-decoration: none;
 }
 
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .search-input {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+  }
+  
+  .search-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+  
+
 .login-download {
     margin-top: 10px;
     color: #fff;
@@ -79,6 +109,11 @@ header .logo {
     width: 60%; /* Adjust width as needed */
 }
 
+.fixed-height {
+    height: 380px; /* Set the desired fixed height */
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+    width: 100%; /* Ensures fluid width to adapt to the container */
+  }
 
 /* Products section */
 .products {
