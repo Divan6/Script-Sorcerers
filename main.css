@@ -1,0 +1,224 @@
+/* Basic resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFB7C5;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .search-input {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+  }
+  
+  .search-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+  
+
+.login-download {
+    margin-top: 10px;
+    color: #fff;
+}
+
+.login-download a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Dropdown styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
+/* Show dropdown when 'show' class is added */
+.dropdown-menu.show {
+    display: block;
+}
+
+/* Banner section */
+.banner {
+    background-color: #444;
+    color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.banner p {
+    font-size: 1.2rem;
+}
+
+/* Carousel styling */
+.carousel-section {
+    margin: 2rem 0;
+}
+
+.carousel-caption h5 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.1rem;
+}
+.code-block {
+    padding: 10px;
+    margin-right: 20px; /* Space between code block and carousel */
+    width: 60%; /* Adjust width as needed */
+}
+
+.fixed-height {
+    height: 380px; /* Set the desired fixed height */
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+    width: 100%; /* Ensures fluid width to adapt to the container */
+  }
+
+/* Products section */
+.products {
+    padding: 2rem 0;
+    text-align: center;
+    background-color: #e93d4c;
+}
+
+.products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.products p {
+    font-size: 12;
+    color: #666;
+}
+
+/* /Movie description popup/ */
+.image-container {
+    position: relative;
+    display: inline-block; 
+}
+
+.description {
+    display: none; 
+    position: absolute;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 80%; 
+}
+
+.image-container:hover .description {
+    display: block; /
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+footer .address,
+footer .footer-links {
+    margin-bottom: 1rem;
+}
+
+footer .footer-links a {
+    color: #fff;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+footer .newsletter form {
+    margin-top: 1rem;
+}
+
+footer input[type="email"] {
+    padding: 0.5rem;
+}
+
+footer button {
+    padding: 0.5rem 1rem;
+    background-color: #444;
+    color: #fff;
+    border: none;
+}
+
+footer .copyright {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
