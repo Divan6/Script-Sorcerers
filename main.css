@@ -1,0 +1,545 @@
+body{
+    margin: 0;
+}
+
+/* .ellipse-div {
+    position: absolute;
+    top: 593px;
+    left: 358px;
+    filter: blur(120px);
+    border-radius: 50%;
+    background-color: #1b1b1b;
+    width: 753px;
+    height: 752px;
+} */
+/* .frame-child1 {
+    position: absolute;
+    top: 507px;
+    left: 658px;
+    filter: blur(150px);
+    border-radius: 50%;
+    background-color: #ff8010;
+    width: 442px;
+    height: 442px;
+} */
+.group-icon {
+    position: absolute;
+    /* top: -58px;
+    left: -88px; */
+    width: 120rem;
+    height: 67.5rem;
+}
+/* .frame-child2 {
+    position: absolute;
+    top: 597px;
+    left: 1025px;
+    filter: blur(100px);
+    border-radius: 50%;
+    background-color: #ffb6c5;
+    width: 518px;
+    height: 518px;
+} */
+.deathNoteP {
+    position: absolute;
+    top: 16.891rem;
+    left: 75.459rem;
+    width: 17.938rem;
+    /* height: 453.6px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.blackCloverP {
+    position: absolute;
+    top: 29.312rem;
+    left: 93.41rem;
+    width: 17.938rem;
+    /* height: 443.8px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.myHeroP {
+    position: absolute;
+    top: 44.242rem;
+    left: 72.941rem;
+    width: 17.938rem;
+    /* height: 474.9px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.spyFamilyP {
+    position: absolute;
+    top: -15.412rem;
+    left: 40.127rem;
+    width: 17.938rem;
+    /* height: 474.1px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.hunterHunterP {
+    position: absolute;
+    top: 56.336rem;
+    left: 91.019rem;
+    width: 17.938rem;
+    /* height: 453.2px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.haikyuP {
+    position: absolute;
+    top: 40.168rem;
+    left: 35.438rem;
+    width: 17.938rem;
+    /* height: 453.2px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.jujutsuP {
+    position: absolute;
+    top: 13.223rem;
+    left: 37.849rem;
+    width: 17.938rem;
+    /* height: 442.2px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.attackTitanP {
+    position: absolute;
+    top: 55.253rem;
+    left: 53.291rem;
+    width: 17.938rem;
+    /* height: 435.2px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.onePunchP {
+    position: absolute;
+    top: -42.56px;
+    left: 927.95px;
+    width: 17.938rem;
+    /* height: 474.1px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.onTitanP {
+    position: absolute;
+    top: -175.39px;
+    left: 1245.79px;
+    width: 17.938rem;
+    /* height: 458.9px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.demonSlayerP {
+    position: absolute;
+    top: 2.73px;
+    left: 1532.3px;
+    width: 17.938rem;
+    /* height: 474.1px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.onePieceP {
+    position: absolute;
+    top: 418.77px;
+    left: 889.59px;
+    width: 17.938rem;
+    /* height: 433.9px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+/* .rectangle-div {
+    position: absolute;
+    top: 197px;
+    left: 156px;
+    border-radius: 32px;
+    background-color: rgba(255, 255, 255, 0.59);
+    width: 457px;
+    height: 686px;
+}
+.group-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 309px;
+    height: 45px;
+}
+.email-address {
+    position: absolute;
+    top: 15px;
+    left: 19px;
+}
+.rectangle-parent {
+    position: absolute;
+    top: 570px;
+    left: 230px;
+    width: 309px;
+    height: 45px;
+} */
+/* .group-item {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 151px;
+    height: 45px;
+} */
+/* .rectangle-group {
+    position: absolute;
+    top: 513px;
+    left: 230px;
+    width: 151px;
+    height: 45px;
+} */
+/* .username {
+    position: absolute;
+    top: 15px;
+    left: 22px;
+} */
+/* .rectangle-container {
+    position: absolute;
+    top: 513px;
+    left: 388px;
+    width: 151px;
+    height: 45px;
+} */
+/* .group-div {
+    position: absolute;
+    top: 644px;
+    left: 230px;
+    width: 309px;
+    height: 45px;
+} */
+/* .rectangle-parent1 {
+    position: absolute;
+    top: 702px;
+    left: 230px;
+    width: 309px;
+    height: 45px;
+} */
+/* .group-child3 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 8px;
+    background-color: #000;
+    width: 183px;
+    height: 39px;
+} */
+/* .create-account {
+    position: absolute;
+    top: 11px;
+    left: 36px;
+    font-weight: 500;
+} */
+/* .rectangle-parent2 {
+    position: absolute;
+    top: 767px;
+    left: 230px;
+    width: 183px;
+    height: 39px;
+    font-size: 15px;
+    color: #fff;
+} */
+/* .sign-up {
+    position: absolute;
+    top: 210px;
+    left: 230px;
+    font-size: 64px;
+    font-weight: 600;
+    color: #000;
+    display: inline-block;
+    width: 267px;
+    height: 84px;
+}
+.nihonnet {
+    position: absolute;
+    top: 158px;
+    left: 230px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #000;
+    display: inline-block;
+    width: 195px;
+    height: 47px;
+} */
+
+.ellipse-parent {
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    height: 67.5rem;
+    overflow: hidden;
+    text-align: left;
+    font-size: 13px;
+    color: #808080;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+#contact {
+    position: absolute;
+    top: 12.313rem;
+    left: 9.75rem;
+    border-radius: 32px;
+    background-color: rgba(255, 255, 255, 0.59);
+    width: 23.938rem;
+    height: 42.875rem;
+    padding-left: 4.625rem;
+    /* padding: 1em 2em; */
+}
+
+fieldset {
+    border: none;
+}
+
+#contact input, #contact textarea{
+    /* width: 309px; */
+    /* border: 1px solid #808080; */
+    background-color: #fff;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+}
+
+#contact input, #contact textarea, #contact button{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Noto Sans Jp", sans-serif;
+}
+
+#contact button{
+    cursor: pointer;
+    width: 11.438rem;
+    height: 3.125rem;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-family: "Noto Sans Jp", sans-serif;
+}
+
+#contact p{
+    color: #000;
+    /* display: block; */
+    font-family: "Noto Sans Jp", sans-serif;
+    margin: 0%;
+}
+
+.nihonnet{
+    font-size: 0;
+    padding: 0%;
+    /* position: absolute; */
+    display: inline-block;
+    width: 195px;
+    height: 36px;
+    padding-top: 61px;
+}
+
+.nihonnet p{
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.signup{
+    font-size: 0;
+    padding: 0%;
+    /* position: absolute; */
+    display: inline-block;
+    width: 267px;
+    height: 64px;
+}
+
+.signup p{
+    font-weight: 600;
+    font-size: 64px;
+}
+
+
+.names input{
+    width: 9.438rem;
+}
+
+
+.flex{
+    display: flex;
+    font-size: 0;
+    margin-bottom: 5px;
+}
+
+
+.pswd{
+    font-size: 0;
+    margin-bottom: 5px;
+}
+
+.pswd input{
+    width: 19.313rem;
+}
+
+.confirmPswd{
+    font-size: 0;
+    margin-bottom: 12px;
+}
+
+.confirmPswd input{
+    width: 19.313rem;
+}
+
+
+.mail{
+    font-size: 0;
+    margin-bottom: 12px;
+}
+
+.mail input{
+    width: 19.313rem;
+}
+
+
+.socials{
+    display: flex;
+    margin-bottom: 61px;
+    margin-top: 16px;
+}
+
+/* .iconO{
+    flex: 10%;
+    padding: 0%;
+    display: inline-block;
+    padding-right: 20px;
+} */
+
+.iconO img{
+    width: 30px;
+    height: 30px;
+    margin: 0%;
+    padding-right: 20px;
+}
+
+.icon1 img{
+    width: 30px;
+    height: 30px;
+    margin: 0%;
+    padding-right: 20px;
+}
+
+.icon2 img{
+    width: 30px;
+    height: 30px;
+    margin: 0%;
+    padding-right: 20px;
+}
+
+.icon3 img{
+    width: 30px;
+    height: 30px;
+    margin: 0%;
+}
+
+/* .frame-child14 {
+    position: relative;
+    top: 102px;
+    left: 100px;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    display: inline-block;
+}
+.frame-child15 {
+    position: relative;
+    top: 102px;
+    left: 130px;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    display: inline-block;
+}
+.frame-child16 {
+    position: absolute;
+    top: 402px;
+    left: 280px;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.frame-child17 {
+    position: absolute;
+    top: 399px;
+    left: 278px;
+    width: 33px;
+    height: 33px;
+    object-fit: cover;
+} */
+
+.names{
+    display: inline-block;
+    /* width: 151px; */
+}
+
+.button{
+    font-size: 0;
+    /* margin-bottom: 77px; */
+}
+
+#contact2 {
+    position: absolute;
+    top: 14.438rem;
+    left: 9.75rem;
+    border-radius: 32px;
+    background-color: rgba(255, 255, 255, 0.59);
+    width: 19.313rem;
+    height: 38.625rem;
+    padding-left: 4.625rem;
+    padding-right: 4.625rem;
+    /* padding: 1em 2em; */
+}
+
+#contact2 input, #contact2 textarea{
+    /* width: 309px; */
+    /* border: 1px solid #808080; */
+    background-color: #fff;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+}
+
+#contact2 input, #contact2 textarea, #contact2 button{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Noto Sans Jp", sans-serif;
+}
+
+#contact2 button{
+    cursor: pointer;
+    width: 11.438rem;
+    height: 3.125rem;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-family: "Noto Sans Jp", sans-serif;
+}
+
+#contact2 p{
+    color: #000;
+    /* display: block; */
+    font-family: "Noto Sans Jp", sans-serif;
+    margin: 0%;
+}
+
+.psp {
+    text-align: right;
+
+}
+
+.button2{
+    font-size: 0;
+    /* margin-bottom: 77px; */
+    margin-top: 12px;
+}
