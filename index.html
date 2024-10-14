@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header>
+    <header> 
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-6">
@@ -21,7 +21,24 @@
                     <nav>
                         <ul class="nav">
                             <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Anime</a></li>
+                            
+                            <!-- Updated Anime Section with Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="animeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Anime</a>
+                                <ul class="dropdown-menu" aria-labelledby="animeDropdown">
+                                    <li><a href="#" class="dropdown-item">Action</a></li>
+                                    <li><a href="#" class="dropdown-item">Adventure</a></li>
+                                    <li><a href="#" class="dropdown-item">Comedy</a></li>
+                                    <li><a href="#" class="dropdown-item">Drama</a></li>
+                                    <li><a href="#" class="dropdown-item">Fantasy</a></li>
+                                    <li><a href="#" class="dropdown-item">Horror</a></li>
+                                    <li><a href="#" class="dropdown-item">Romance</a></li>
+                                    <li><a href="#" class="dropdown-item">Sci-Fi</a></li>
+                                    <li><a href="#" class="dropdown-item">Sports</a></li>
+                                    <li><a href="#" class="dropdown-item">Slice of Life</a></li>
+                                </ul>
+                            </li>
+                            
                             <li class="nav-item"><a href="#" class="nav-link">About</a></li>
                             <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
                             <li class="nav-item"><a href="#" class="nav-link">Help</a></li>
@@ -31,12 +48,15 @@
                                     Watchlist
                                 </a>
                             </li>
+                            
                             <!-- Search is now part of the nav items, right after Watchlist -->
                             <li class="nav-item search-container">
-                                <input type="text" placeholder="Search..." class="search-input">
-                                <button type="submit" class="search-button">
-                                    <img src="images/search icon.png" alt="Search" class="search-icon">
-                                </button>
+                                <form id="searchForm">
+                                    <input type="text" id="searchInput" placeholder="Search..." class="search-input">
+                                    <button type="submit" class="search-button">
+                                        <img src="images/search icon.png" alt="Search" class="search-icon">
+                                    </button>
+                                </form>
                             </li>                               
                         </ul>
                         <div class="login-download">
@@ -47,6 +67,7 @@
             </div>
         </div>
     </header>
+    
     
     
 
@@ -104,36 +125,53 @@
             </div>
             <div class="container">
                 <div class="row align-items-start">
-                  <div class="col">
-                    <img src="images/jujutsu kaisen.jpe" class="img-fluid fixed-height" alt="...">
-                  </div>
-                  <div class="col">
-                    <img src="images/demon slayer.webp" class="img-fluid fixed-height" alt="...">
-                  </div>
-                  <div class="col">
-                    <img src="images/filters_quality(95)format(webp).webp" class="img-fluid fixed-height" alt="...">
-                  </div>
-                  <div class="col">
-                    <img src="images/frieren.avif" class="img-fluid fixed-height" alt="...">
-                  </div>
+                    <div class="col">
+                        <div class="img-wrapper">
+                            <img src="images/jujutsu kaisen.jpe" class="img-fluid fixed-size" alt="Jujutsu Kaisen">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img-wrapper">
+                            <img src="images/demon slayer.webp" class="img-fluid fixed-size" alt="Demon Slayer">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img-wrapper">
+                            <img src="images/filters_quality(95)format(webp).webp" class="img-fluid fixed-size" alt="Filters">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img-wrapper">
+                            <img src="images/frieren.avif" class="img-fluid fixed-size" alt="Frieren">
+                        </div>
+                    </div>
                 </div>
                 <div class="row align-items-center">
-                  <div class="col">
-                    <img src="images/solo leveling.avif" class="img-fluid fixed-height" alt="...">
-                  </div>
-                  <div class="col">
-                    <img src="images/undead unluck.webp" class="img-fluid fixed-height" alt="...">
-                  </div>
-                  <div class="col">
-                    <img src="images/attack on titan.avif" class="img-fluid fixed-height" alt="...">
-                  </div>
-                  <div class="col">
-                    <img src="images/fate.jpe" class="img-fluid fixed-height" alt="...">
-                  </div>
+                    <div class="col">
+                        <div class="img-wrapper">
+                            <img src="images/solo leveling.avif" class="img-fluid fixed-size" alt="Solo Leveling">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img-wrapper">
+                            <img src="images/undead unluck.webp" class="img-fluid fixed-size" alt="Undead Unluck">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img-wrapper">
+                            <img src="images/attack on titan.avif" class="img-fluid fixed-size" alt="Attack on Titan">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img-wrapper">
+                            <img src="images/fate.jpe" class="img-fluid fixed-size" alt="Fate">
+                        </div>
+                    </div>
                 </div>
-              </div>
-              
+            </div>
         </section>
+        
+        
     </main>
 
     <footer>

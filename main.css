@@ -55,7 +55,7 @@ header {
 }
 
 .search-input {
-    width: 150px;
+    width: 200px;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px 0 0 5px;
@@ -64,7 +64,7 @@ header {
 
 .search-button {
     padding: 5px;
-    background-color: #007bff;
+    background-color: #fd9311;
     color: white;
     border: none;
     border-radius: 0 5px 5px 0;
@@ -109,6 +109,59 @@ header {
         width: 100%;
     }
 }
+
+/* Dropdown Menu Styling */
+.nav-item.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    content: '▼';
+    margin-left: 5px;
+    font-size: 0.8rem;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    border: 1px solid #ff6600; /* Matches header border */
+    border-radius: 10px;
+    padding: 10px;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+.dropdown-menu .dropdown-item {
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #ff6600; /* Highlight on hover */
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Adjust for mobile responsiveness */
+@media (max-width: 768px) {
+    .nav-item.dropdown {
+        text-align: left;
+    }
+    
+    .dropdown-menu {
+        width: 100%;
+        top: 100%;
+        left: 0;
+    }
+}
+
 
 /* Banner section */
 .banner {
@@ -181,6 +234,44 @@ header {
 .products p {
     font-size: 1.1rem;
     color: #666;
+}
+
+/* Image wrapper and sizing */
+.img-wrapper {
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* Ensures that the overlay doesn't spill outside the image */
+}
+
+.fixed-size {
+    width: 100%; /* Adjust to make it responsive */
+    max-width: 200px; /* Set a fixed width */
+    height: 300px; /* Set a fixed height */
+    object-fit: cover; /* Ensure images are cropped to fit the box, maintaining their aspect ratio */
+    transition: transform 0.3s ease;
+}
+
+/* Add a pseudo-element for the black overlay */
+.img-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Initially transparent */
+    transition: background-color 0.3s ease;
+    z-index: 1; /* Make sure the overlay sits above the image */
+}
+
+/* Hover effect for the image */
+.img-wrapper:hover img {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Darken the overlay on hover */
+.img-wrapper:hover::before {
+    background-color: rgba(0, 0, 0, 0.3); /* Black overlay with 30% opacity */
 }
 
 /* Footer styling */
