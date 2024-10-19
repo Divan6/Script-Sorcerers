@@ -59,15 +59,15 @@ header {
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px 0 0 5px;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .search-button {
-    padding: 5px;
+    padding: 8px;
     background-color: #fd9311;
     color: white;
     border: none;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 4px 4px 0;
     cursor: pointer;
 }
 
@@ -118,7 +118,7 @@ header {
 .dropdown-toggle::after {
     content: '▼';
     margin-left: 5px;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 .dropdown-menu {
@@ -126,8 +126,8 @@ header {
     position: absolute;
     background-color: #333;
     border: 1px solid #ff6600; /* Matches header border */
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 12px;
+    padding: 12px;
     top: 100%;
     left: 0;
     z-index: 1000;
@@ -135,7 +135,7 @@ header {
 
 .dropdown-menu .dropdown-item {
     color: white;
-    padding: 8px 12px;
+    padding: 8px 13px;
     text-decoration: none;
     display: block;
     transition: background-color 0.3s ease;
@@ -183,7 +183,7 @@ header {
 }
 
 .banner h2 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     margin-bottom: 1rem;
     font-family: "Noto Sans JP", sans-serif;
 }
@@ -303,12 +303,12 @@ footer input[type="email"] {
 
 footer button {
     padding: 0.5rem 1rem;
-    background-color: #444;
+    background-color: #4b4b4b;
     color: #fff;
     border: none;
 }
 
 footer .copyright {
     margin-top: 1rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
