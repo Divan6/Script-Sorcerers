@@ -172,7 +172,7 @@ header {
     width: 100%;
     height: 300px;
     /* Adjust the height to your preference */
-    background-image: url('images/banner.png');
+    background-image: url('../images/banner.png');
     /* Path to your image */
     background-size: cover;
     /* Ensures the image covers the entire banner */
