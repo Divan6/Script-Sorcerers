@@ -14,7 +14,7 @@ body {
 
 /* Main header styling */
 header {
-    background-color: #000;
+    background-color: #1c1c1c;
     color: #fff;
     padding: 1rem 0;
     font-family: "Noto Sans JP", sans-serif;
@@ -276,7 +276,7 @@ header {
 
 /* Footer styling */
 footer {
-    background-color: #333;
+    background-color: #1c1c1c;
     color: #fff;
     padding: 2rem 0;
     font-family: "Noto Sans JP", sans-serif;
