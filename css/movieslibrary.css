@@ -245,7 +245,7 @@ header {
 
 .fixed-size {
     width: 100%; /* Adjust to make it responsive */
-    max-width: 300px; /* Set a fixed width */
+    max-width: 250px; /* Set a fixed width */
     height: 400px; /* Set a fixed height */
     object-fit: cover; /* Ensure images are cropped to fit the box, maintaining their aspect ratio */
     transition: transform 0.3s ease;
