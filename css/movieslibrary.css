@@ -221,13 +221,13 @@ header {
 .products {
     padding: 2rem 0;
     text-align: center;
-    background-color: #fc7d97;
+    background-color: #1c1c1c;
 }
 
 .products h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #333;
+    color: #fff;
     font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -276,8 +276,8 @@ header {
 
 /* Footer styling */
 footer {
-    background-color: #1c1c1c;
-    color: #fff;
+    background-color: #FFB7C5;
+    color: #1c1c1c;
     padding: 2rem 0;
     font-family: "Noto Sans JP", sans-serif;
 }
@@ -288,7 +288,7 @@ footer .footer-links {
 }
 
 footer .footer-links a {
-    color: #fff;
+    color: #1c1c1c;
     margin-right: 15px;
     text-decoration: none;
 }
