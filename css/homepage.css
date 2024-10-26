@@ -218,32 +218,32 @@ header {
   }
 
 /* Products section */
-.products {
+.homepage-products {
     padding: 2rem 0;
     text-align: center;
     background-color: #1c1c1c;
 }
 
-.products h2 {
+.homepage-products h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #fff;
     font-family: "Noto Sans JP", sans-serif;
 }
 
-.products p {
+.homepage-products p {
     font-size: 1.1rem;
     color: #fff;
 }
 
 /* Image wrapper and sizing */
-.img-wrapper {
+.homepage-img-wrapper {
     position: relative;
     display: inline-block;
     overflow: hidden; /* Ensures that the overlay doesn't spill outside the image */
 }
 
-.fixed-size {
+.homepage-fixed-size {
     width: 100%; /* Adjust to make it responsive */
     max-width: 200px; /* Set a fixed width */
     height: 300px; /* Set a fixed height */
@@ -252,7 +252,7 @@ header {
 }
 
 /* Add a pseudo-element for the black overlay */
-.img-wrapper::before {
+.homepage-img-wrapper::before {
     content: '';
     position: absolute;
     top: 0;
@@ -265,12 +265,12 @@ header {
 }
 
 /* Hover effect for the image */
-.img-wrapper:hover img {
+.homepage-img-wrapper:hover img {
     transform: scale(1.05); /* Slight zoom on hover */
 }
 
 /* Darken the overlay on hover */
-.img-wrapper:hover::before {
+.homepage-img-wrapper:hover::before {
     background-color: rgba(0, 0, 0, 0.3); /* Black overlay with 30% opacity */
 }
 
