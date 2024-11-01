@@ -543,3 +543,202 @@ fieldset {
     /* margin-bottom: 77px; */
     margin-top: 12px;
 }
+
+.dark-section{
+    background-color: #1c1c1c;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .absolute-image {
+    position: absolute;
+    width: 511px;
+    height: 803px;
+    left: 113px;
+    top: 209px;
+  }
+
+  /* .text-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  } */
+
+  .absolute-text {
+    position: absolute;
+    color: white;
+    font-size: 96px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    left: 706px;
+    top: 328px;
+    word-wrap: break-word;
+  }
+
+  /* .text-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  } */
+
+  .absolute-text-jp {
+    position: absolute;
+    color: white;
+    font-size: 64px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    left: 706px;
+    top: 439px;
+    word-wrap: break-word;
+  }
+
+  .watchlist-container {
+    position: absolute;
+    width: 228px;
+    height: 42px;
+    left: 706px;
+    top: 556px;
+    border: 1.5px solid #FF7F11;
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+  }
+
+  .bookmark-icon {
+    width: 33px;
+    height: 33px;
+  }
+
+  .watchlist-text {
+    color: #FF7F11;
+    font-size: 22px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    margin-left: 7px;
+  }
+
+  .text-container-des {
+    position: absolute;
+    /* width: 864px;
+    height: 256px; */
+    left: 706px;
+    top: 655px;
+    color: white;
+    font-size: 22px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+
+  .tag-container {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    left: 706px;
+    top: 953px;
+  }
+
+  .tag-box {
+    width: 88px;
+    height: 34px;
+    background-color: #FF7F11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tag-text {
+    color: white;
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+  }
+  
+
+  /* Main header styling */
+.homepage-header {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 1rem 0;
+    font-family: "Noto Sans JP", sans-serif;
+    border: 10px solid #ff6600; /* Orange border */
+    border-radius: 15px; /* Rounded corners */
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Adds space between navigation items */
+}
+
+.nav-item {
+    display: inline-flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ccc; /* Subtle hover effect */
+}
+
+/* Search Container Styling */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 0; /* Removed extra margin so it stays close to the Watchlist */
+}
+
+.search-input {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 15px;
+}
+
+.search-button {
+    padding: 8px;
+    background-color: #fd9311;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-button img {
+    width: 16px;
+    height: 16px;
+}
+
+/* Login and download links */
+.login-download {
+    margin-top: 10px;
+    color: #fff;
+}
+
+.login-download a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.login-download a:hover {
+    color: #ccc;
+}
