@@ -1,5 +1,3 @@
-// script.js
-
 document.addEventListener('DOMContentLoaded', () => {
     const signUpForm = document.forms['signUp'];
     const signInForm = document.forms['signIn'];
@@ -34,9 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (email === storedEmail && password === storedPassword) {
                 alert('Sign in successful!');
+                window.location.href = 'index.html';
             } else {
                 alert('Invalid email or password!');
             }
+
+            
         });
     }
 });
