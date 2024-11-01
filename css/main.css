@@ -752,6 +752,8 @@ fieldset {
     word-wrap: break-word;
   }
 
+  
+
   .star-container {
     position: absolute;
     display: flex;
@@ -763,7 +765,16 @@ fieldset {
   .star-icon {
     width: 33px;
     height: 33px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
   }
+
+  .star-icon:hover {
+    transform: scale(1.1);
+  }
+
+  
+
 
 
 

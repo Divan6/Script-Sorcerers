@@ -38,3 +38,42 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+
+
+
+
+
+
+
+
+const stars = document.querySelectorAll('.star-icon');
+let currentRating = 0;
+
+stars.forEach((star, index) => {
+  // Hover effect to show potential rating
+  star.addEventListener('mouseenter', () => {
+    fillStars(index + 1);
+  });
+
+  // Reset stars when mouse leaves
+  star.addEventListener('mouseleave', () => {
+    fillStars(currentRating);
+  });
+
+  // Set rating on click
+  star.addEventListener('click', () => {
+    currentRating = index + 1;
+    fillStars(currentRating);
+  });
+});
+
+function fillStars(rating) {
+  stars.forEach((star, i) => {
+    if (i < rating) {
+      star.src = "../assets/images/starfill.svg"; // Filled star image
+    } else {
+      star.src = "../assets/images/star.svg"; // Empty star image
+    }
+  });
+}
