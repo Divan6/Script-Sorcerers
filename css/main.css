@@ -2,26 +2,6 @@ body{
     margin: 0;
 }
 
-/* .ellipse-div {
-    position: absolute;
-    top: 593px;
-    left: 358px;
-    filter: blur(120px);
-    border-radius: 50%;
-    background-color: #1b1b1b;
-    width: 753px;
-    height: 752px;
-} */
-/* .frame-child1 {
-    position: absolute;
-    top: 507px;
-    left: 658px;
-    filter: blur(150px);
-    border-radius: 50%;
-    background-color: #ff8010;
-    width: 442px;
-    height: 442px;
-} */
 .group-icon {
     position: absolute;
     /* top: -58px;
@@ -29,16 +9,7 @@ body{
     width: 120rem;
     height: 67.5rem;
 }
-/* .frame-child2 {
-    position: absolute;
-    top: 597px;
-    left: 1025px;
-    filter: blur(100px);
-    border-radius: 50%;
-    background-color: #ffb6c5;
-    width: 518px;
-    height: 518px;
-} */
+
 .deathNoteP {
     position: absolute;
     top: 16.891rem;
@@ -147,124 +118,7 @@ body{
     object-fit: contain;
     transform: rotate(4.95deg);
 }
-/* .rectangle-div {
-    position: absolute;
-    top: 197px;
-    left: 156px;
-    border-radius: 32px;
-    background-color: rgba(255, 255, 255, 0.59);
-    width: 457px;
-    height: 686px;
-}
-.group-child {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: 8px;
-    background-color: #fff;
-    width: 309px;
-    height: 45px;
-}
-.email-address {
-    position: absolute;
-    top: 15px;
-    left: 19px;
-}
-.rectangle-parent {
-    position: absolute;
-    top: 570px;
-    left: 230px;
-    width: 309px;
-    height: 45px;
-} */
-/* .group-item {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: 8px;
-    background-color: #fff;
-    width: 151px;
-    height: 45px;
-} */
-/* .rectangle-group {
-    position: absolute;
-    top: 513px;
-    left: 230px;
-    width: 151px;
-    height: 45px;
-} */
-/* .username {
-    position: absolute;
-    top: 15px;
-    left: 22px;
-} */
-/* .rectangle-container {
-    position: absolute;
-    top: 513px;
-    left: 388px;
-    width: 151px;
-    height: 45px;
-} */
-/* .group-div {
-    position: absolute;
-    top: 644px;
-    left: 230px;
-    width: 309px;
-    height: 45px;
-} */
-/* .rectangle-parent1 {
-    position: absolute;
-    top: 702px;
-    left: 230px;
-    width: 309px;
-    height: 45px;
-} */
-/* .group-child3 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: 8px;
-    background-color: #000;
-    width: 183px;
-    height: 39px;
-} */
-/* .create-account {
-    position: absolute;
-    top: 11px;
-    left: 36px;
-    font-weight: 500;
-} */
-/* .rectangle-parent2 {
-    position: absolute;
-    top: 767px;
-    left: 230px;
-    width: 183px;
-    height: 39px;
-    font-size: 15px;
-    color: #fff;
-} */
-/* .sign-up {
-    position: absolute;
-    top: 210px;
-    left: 230px;
-    font-size: 64px;
-    font-weight: 600;
-    color: #000;
-    display: inline-block;
-    width: 267px;
-    height: 84px;
-}
-.nihonnet {
-    position: absolute;
-    top: 158px;
-    left: 230px;
-    font-size: 36px;
-    font-weight: 600;
-    color: #000;
-    display: inline-block;
-    width: 195px;
-    height: 47px;
-} */
+
 
 .ellipse-parent {
     width: 100%;
@@ -440,41 +294,6 @@ fieldset {
     margin: 0%;
 }
 
-/* .frame-child14 {
-    position: relative;
-    top: 102px;
-    left: 100px;
-    width: 30px;
-    height: 30px;
-    object-fit: cover;
-    display: inline-block;
-}
-.frame-child15 {
-    position: relative;
-    top: 102px;
-    left: 130px;
-    width: 30px;
-    height: 30px;
-    object-fit: cover;
-    display: inline-block;
-}
-.frame-child16 {
-    position: absolute;
-    top: 402px;
-    left: 280px;
-    width: 30px;
-    height: 30px;
-    object-fit: cover;
-}
-.frame-child17 {
-    position: absolute;
-    top: 399px;
-    left: 278px;
-    width: 33px;
-    height: 33px;
-    object-fit: cover;
-} */
-
 .names{
     display: inline-block;
     /* width: 151px; */
@@ -544,6 +363,12 @@ fieldset {
     margin-top: 12px;
 }
 
+.single-body{
+    background-color: #1C1C1C;
+    width: 100vw;
+    height: 100vh;
+}
+
 .dark-section{
     background-color: #1c1c1c;
     width: 100vw;
@@ -551,11 +376,11 @@ fieldset {
     position: relative;
 }
 
-.image-container {
+/* .image-container {
     position: relative;
     width: 100vw;
     height: 100vh;
-  }
+  } */
 
   .absolute-image {
     position: absolute;
@@ -574,7 +399,7 @@ fieldset {
   .absolute-text {
     position: absolute;
     color: white;
-    font-size: 96px;
+    font-size: 66px;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 500;
     left: 706px;
@@ -591,24 +416,25 @@ fieldset {
   .absolute-text-jp {
     position: absolute;
     color: white;
-    font-size: 64px;
+    font-size: 34px;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 500;
     left: 706px;
-    top: 439px;
+    top: 419px;
     word-wrap: break-word;
   }
 
   .watchlist-container {
     position: absolute;
-    width: 228px;
+    width: 214px;
     height: 42px;
     left: 706px;
-    top: 556px;
+    top: 548px;
     border: 1.5px solid #FF7F11;
     display: flex;
     align-items: center;
     padding-left: 4px;
+    background-color: #1C1C1C;
   }
 
   .bookmark-icon {
@@ -618,7 +444,7 @@ fieldset {
 
   .watchlist-text {
     color: #FF7F11;
-    font-size: 22px;
+    font-size: 20px;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 500;
     margin-left: 7px;
@@ -626,14 +452,14 @@ fieldset {
 
   .text-container-des {
     position: absolute;
-    /* width: 864px;
-    height: 256px; */
+    width: 864px;
+    /* height: 256px; */
     left: 706px;
     top: 655px;
     color: white;
-    font-size: 22px;
+    font-size: 18px;
     font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     word-wrap: break-word;
   }
 
@@ -662,7 +488,21 @@ fieldset {
   }
   
 
-  /* Main header styling */
+/* Basic resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.homepage-body {
+    font-family: Arial, sans-serif;
+    background-color: #FFB7C5;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+
+/* Main header styling */
 .homepage-header {
     background-color: #1c1c1c;
     color: #fff;
@@ -741,4 +581,227 @@ fieldset {
 
 .login-download a:hover {
     color: #ccc;
+}
+
+/* Adjust for mobile responsiveness */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-container {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+}
+
+/* Dropdown Menu Styling */
+.nav-item.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    content: '▼';
+    margin-left: 5px;
+    font-size: 0.7rem;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    border: 1px solid #ff6600; /* Matches header border */
+    border-radius: 12px;
+    padding: 12px;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+.dropdown-menu .dropdown-item {
+    color: white;
+    padding: 8px 13px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #ff6600; /* Highlight on hover */
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Adjust for mobile responsiveness */
+@media (max-width: 768px) {
+    .nav-item.dropdown {
+        text-align: left;
+    }
+    
+    .dropdown-menu {
+        width: 100%;
+        top: 100%;
+        left: 0;
+    }
+}
+
+
+/* Banner section */
+.banner {
+  
+    color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    /* Adjust the height to your preference */
+    background-image: url('../assets/images/Banner\ from\ Script\ Sorcerers.png');
+    /* Path to your image */
+    background-size: cover;
+    /* Ensures the image covers the entire banner */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+}
+
+.banner h2 {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.banner p {
+    font-size: 1.2rem;
+}
+
+.full-background {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1C1C1C;
+    position: relative;
+}
+
+.icon-container {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 305px;
+    top: 718px;
+}
+
+.icon-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* border: 2px solid white; */
+}
+
+.trash-icon-container {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 354px;
+    top: 718px;
+}
+
+.trash-icon {
+    width: 100%;
+    height: 100%;
+  }
+
+  .bookmark-icon-container-white {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 855px;
+    top: 184px;
+  }
+
+  .bookmark-icon-white {
+    width: 100%;
+    height: 100%;
+  }
+
+  .one-piece-text {
+    position: absolute;
+    left: 113px;
+    top: 678px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+
+  .my-list-text {
+    position: absolute;
+    left: 897px;
+    top: 170px;
+    color: white;
+    font-size: 38px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+
+  .star-container {
+    position: absolute;
+    display: flex;
+    gap: 10px; /* space between stars */
+    left: 706px;
+    top: 494px;
+  }
+
+  .star-icon {
+    width: 33px;
+    height: 33px;
+  }
+
+
+  
+  /* Footer styling */
+footer {
+    background-color: #FFB7C5;
+    color: #1c1c1c;
+    padding: 2rem 0;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+footer .address,
+footer .footer-links {
+    margin-bottom: 1rem;
+}
+
+footer .footer-links a {
+    color: #1c1c1c;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+footer .newsletter form {
+    margin-top: 1rem;
+}
+
+footer input[type="email"] {
+    padding: 0.5rem;
+}
+
+footer button {
+    padding: 0.5rem 1rem;
+    background-color: #4b4b4b;
+    color: #fff;
+    border: none;
+}
+
+footer .copyright {
+    margin-top: 1rem;
+    font-size: 0.8rem;
 }
