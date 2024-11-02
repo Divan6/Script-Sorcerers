@@ -1,122 +1,203 @@
-console.log("Linked")
-// API TEST
-const myHeaders = new Headers();
-myHeaders.append("x-apihub-key", "qRpABCZsUymYdltQ4uvdJwgKvBH3dmTPKVQqYi2CGAsKafLFgO");
-myHeaders.append("x-apihub-host", "AnimeList-API.allthingsdev.co");
-myHeaders.append("x-apihub-endpoint", "10b0d633-40f8-43ee-af7f-812833c933a1");
-
-const requestOptions = {
-   method: "GET",
-   headers: myHeaders,
-   redirect: "follow"
-};
-
-!async function name(params) {
-    
-}
-
-!async function ()
-{
-    let data = await fetch("https://AnimeList-API.proxy-production.allthingsdev.co/v4/anime", requestOptions)
-        .then((response) => response.text())
-        .then((result) => 
-        { 
-            return result;
-        }
-    )
-    .catch((error) => console.error(error));
-
-    DisplayMovies(data);
-}();
-
-
-function DisplayMovies(dataToDisplay)
-{
-    let animeObject = JSON.parse(dataToDisplay);
-    console.log(animeObject.data);
-    
-    if (Array.isArray(animeObject.data)) {
-        animeObject.data.forEach(anime => {
-            // Log the title of each anime
-            console.log(anime.title);
-            console.log(anime.images);
-        });
-    } else {
-        console.error("Data is not an array.");
-    }
-}
-
-// API Configuration
+/ // API 
 // const myHeaders = new Headers();
 // myHeaders.append("x-apihub-key", "qRpABCZsUymYdltQ4uvdJwgKvBH3dmTPKVQqYi2CGAsKafLFgO");
 // myHeaders.append("x-apihub-host", "AnimeList-API.allthingsdev.co");
 // myHeaders.append("x-apihub-endpoint", "10b0d633-40f8-43ee-af7f-812833c933a1");
 
 // const requestOptions = {
-//     method: "GET",
-//     headers: myHeaders,
-//     redirect: "follow"
+//    method: "GET",
+//    headers: myHeaders,
+//    redirect: "follow"
 // };
 
 // !async function name(params) {
     
 // }
 
-// // Fetch Anime Data
-// async function fetchAnimeData() {
-//     try {
-//         const response = await fetch("https://AnimeList-API.proxy-production.allthingsdev.co/v4/anime", requestOptions);
-//         const result = await response.json();
-//         displayAnimeCarousel(result.data);
-//     } catch (error) {
-//         console.error("Error fetching anime data:", error);
+// !async function ()
+// {
+//     let data = await fetch("https://AnimeList-API.proxy-production.allthingsdev.co/v4/anime?q=Naruto", requestOptions)
+//         .then((response) => response.text())
+//         .then((result) => 
+//         { 
+//             return result;
+//         }
+//     )
+//     .catch((error) => console.error(error));
 
+//     DisplayMovies(data);
+// }();
+
+
+// function DisplayMovies(dataToDisplay)
+// {
+//     let animeObject = JSON.parse(dataToDisplay);
+//     console.log(animeObject.data);
+    
+//     if (Array.isArray(animeObject.data)) {
+//         animeObject.data.forEach(anime => {
+//             // Log the title of each anime
+//             console.log(anime.title);
+//             console.log(anime.images);
+//         });
+//     } else {
+//         console.error("Data is not an array.");
 //     }
 // }
 
-// // Display Anime Carousel
-// function displayAnimeCarousel(animeList) {
-//     const carouselInner = document.getElementById("animeCarouselInner");
-//     animeList.forEach((anime, index) => {
+// API Configuration
+const myHeaders = new Headers();
+myHeaders.append("x-apihub-key", "qRpABCZsUymYdltQ4uvdJwgKvBH3dmTPKVQqYi2CGAsKafLFgO");
+myHeaders.append("x-apihub-host", "AnimeList-API.allthingsdev.co");
+myHeaders.append("x-apihub-endpoint", "10b0d633-40f8-43ee-af7f-812833c933a1");
+
+const requestOptions = {
+    method: "GET",
+    headers: myHeaders,
+    redirect: "follow"
+};
+
+// Fetch Anime Data
+async function fetchAnimeData() {
+    try {
+        const response = await fetch("https://AnimeList-API.proxy-production.allthingsdev.co/v4/anime", requestOptions);
+        const result = await response.json();
+        displayAnimeCarousel(result.data);
+    } catch (error) {
+        console.error("Error fetching anime data:", error);
+    }
+}
+
+// async function fetchAnimeData() 
+//     {
+//         let data = await fetch("https://AnimeList-API.proxy-production.allthingsdev.co/v4/anime", requestOptions)
+//             .then((response) => response.text())
+//             .then((result) => 
+//             { 
+//                 return result;
+//             }
+//         )
+//         .catch((error) => console.error(error));
+    
+//         DisplayMovies(data);
+//     };
+
+// function DisplayMovies(dataToDisplay)
+//     {
+//         let animeObject = JSON.parse(dataToDisplay);
+//         // console.log(animeObject.data);
         
-//         const itemDiv = document.createElement("div");
-//         itemDiv.classList.add("carousel-item");
-//         if (index === 0) itemDiv.classList.add("active"); 
+//         // if (Array.isArray(animeObject.data)) {
+//         //     animeObject.data.forEach(anime => {
+//         //         // Log the title of each anime
+//         //         console.log(anime.title);
+//         //         console.log(anime.images);
+//         //     });
+//         // } else {
+//         //     console.error("Data is not an array.");
+//         // }
+//     }
 
-//         //clickable image
-//         const imgLink = document.createElement("a");
-//         imgLink.href = `Pages/index.html?id=${anime.mal_id}`; // Link to single anime page
-//         imgLink.addEventListener("click", function (event) {
-//             event.preventDefault(); // Optional: Prevent default navigation
-//             navigateToAnimePage(anime.mal_id);
-//         });
+// Display Anime Carousel with 4 images per slide and hover effect
+function displayAnimeCarousel(animeList) {
+    const carouselInner = document.getElementById("animeCarouselInner");
+    for (let i = 0; i < animeList.length; i += 4) {
+        
+        const itemDiv = document.createElement("div");
+        itemDiv.classList.add("carousel-item");
+        if (i === 0) itemDiv.classList.add("active"); 
 
-//         // Image element
-//         const img = document.createElement("img");
-//         img.src = anime.images.jpg.image_url; // Display anime image
-//         img.alt = anime.title; 
-//         img.classList.add("d-block", "w-100", "movie-fixed-size"); // Add styling classes
+        const rowDiv = document.createElement("div");
+        rowDiv.classList.add("row", "text-center"); 
 
-//         // Title overlay
-//         const titleOverlay = document.createElement("div");
-//         titleOverlay.classList.add("carousel-caption", "d-none", "d-md-block");
-//         titleOverlay.innerHTML = `<h5>${anime.title}</h5>`;
+        for (let j = i; j < i + 4 && j < animeList.length; j++) {
+            const anime = animeList[j];
 
-//         imgLink.appendChild(img);
-//         itemDiv.appendChild(imgLink);
-//         itemDiv.appendChild(titleOverlay);
-//         carouselInner.appendChild(itemDiv);
-//     });
-// }
+            // column div
+            const colDiv = document.createElement("div");
+            colDiv.classList.add("col-3", "position-relative");
 
-// // Function to handle navigation to single anime page
-// function navigateToAnimePage(animeId) {
-//     window.location.href = `anime.html?id=${animeId}`;
-// }
+            // clickable image link
+            const imgLink = document.createElement("a");
+            imgLink.href = `SinglemoviePage.html?id=${anime.mal_id}`;
+            imgLink.style.position = "relative";
+            imgLink.style.display = "block";
 
-// // Initialize fetch and display
-// fetchAnimeData();
+            // Image element
+            const img = document.createElement("img");
+            img.src = anime.images.jpg.image_url;
+            img.alt = anime.title;
+            img.classList.add("img-fluid", "movie-fixed-size");
 
+            // Overlay for title and button, hidden
+            const titleOverlay = document.createElement("div");
+            titleOverlay.classList.add("popup-info");
+            titleOverlay.style.position = "absolute";
+            titleOverlay.style.bottom = "0";
+            titleOverlay.style.left = "0";
+            titleOverlay.style.width = "100%";
+            titleOverlay.style.background = "rgba(0, 0, 0, 0.7)";
+            titleOverlay.style.color = "white";
+            titleOverlay.style.padding = "10px";
+            titleOverlay.style.textAlign = "center";
+            titleOverlay.style.transform = "translateY(100%)"; 
+            titleOverlay.style.transition = "transform 0.3s ease-in-out";
+
+            // hover effect
+            imgLink.addEventListener("mouseenter", () => {
+                titleOverlay.style.transform = "translateY(0)"; 
+            });
+            imgLink.addEventListener("mouseleave", () => {
+                titleOverlay.style.transform = "translateY(100%)"; 
+            });
+
+            // Anime title and watchlist button in overlay
+            titleOverlay.innerHTML = `<h5>${anime.title}</h5>`;
+            const watchlistButton = document.createElement("button");
+            watchlistButton.textContent = "Add to Watchlist";
+            watchlistButton.style.backgroundColor = "#ff6600";
+            watchlistButton.style.color = "white";
+            watchlistButton.style.border = "none";
+            watchlistButton.style.padding = "5px 10px";
+            watchlistButton.style.marginTop = "10px";
+            watchlistButton.style.cursor = "pointer";
+            watchlistButton.style.borderRadius = "3px";
+
+            // Watchlist button 
+            watchlistButton.addEventListener("click", (event) => {
+                event.stopPropagation(); 
+                addToWatchlist(anime);
+            });
+
+            titleOverlay.appendChild(watchlistButton);
+            imgLink.appendChild(img);
+            imgLink.appendChild(titleOverlay);
+            colDiv.appendChild(imgLink);
+            rowDiv.appendChild(colDiv);
+        }
+
+        itemDiv.appendChild(rowDiv);
+        carouselInner.appendChild(itemDiv);
+    }
+}
+
+// add anime to watchlist and store in localStorage
+function addToWatchlist(anime) {
+    
+    const watchlist = JSON.parse(localStorage.getItem("animeWatchlist")) || [];
+
+    
+    if (!watchlist.some((item) => item.mal_id === anime.mal_id)) {
+        watchlist.push(anime);
+        localStorage.setItem("animeWatchlist", JSON.stringify(watchlist));
+        console.log("Updated Watchlist:", watchlist); // Log updated watchlist
+        alert(`${anime.title} added to your watchlist!`);
+    } else {
+        alert(`${anime.title} is already in your watchlist!`);
+    }
+}
+
+fetchAnimeData();
 
 // form submission
 document.getElementById('newsletter-form').addEventListener('submit', function(event) {
@@ -163,4 +244,3 @@ document.getElementById('searchForm').addEventListener('submit', function(event)
         alert('No matching results found');
     }
 });
-

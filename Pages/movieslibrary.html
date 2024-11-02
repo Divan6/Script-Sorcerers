@@ -82,9 +82,15 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet.</p>-->
             </div>
         </section>
-        
-        <!-- HTML for Anime Carousel -->
-        <section class="carousel-section">
+
+
+
+        <section class="products">
+            <div class="container">
+                <h2>Browse Anime</h2>
+                <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet.</p>-->
+            </div>
+            <!-- Anime Carousel -->
             <div id="animeCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner" id="animeCarouselInner">
                     <!-- Anime items will be injected here by JavaScript -->
@@ -98,334 +104,554 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-        </section>
-
-
-        <section class="products">
-            <div class="container">
-                <h2>Browse Anime</h2>
-                <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet.</p>-->
-            </div>
-            <div class="container">
-                <div class="row align-items-start">
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/sword art online.avif" class="img-fluid movie-fixed-size" alt="Jujutsu Kaisen">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/full metal alchemist.avif" class="img-fluid movie-fixed-size" alt="Demon Slayer">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/mushoku tensei jobless reincarnation.avif" class="img-fluid movie-fixed-size" alt="Filters">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/laid back camp.jpe" class="img-fluid movie-fixed-size" alt="Frieren">
-                        </div>
-                    </div>
-                </div>
             
-                <div class="row align-items-center">
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/your lie in april.jpe" class="img-fluid movie-fixed-size" alt="Solo Leveling">
+        
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#browseAnimeCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#browseAnimeCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+                
+            <div class="container">
+                <h2>Recent Releases</h2>
+            </div>
+            <div id="browseAnimeCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" > 
+                    <!-- First Slide -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/sword art online.avif" class="img-fluid movie-fixed-size" alt="Sword Art Online"></a>
+                                    <div class="popup-info">
+                                        <h5>Sword Art Online</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/full metal alchemist.avif" class="img-fluid movie-fixed-size" alt="Full Metal Alchemist"></a>
+                                    <div class="popup-info">
+                                        <h5>Full Metal Alchemist</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/mushoku tensei jobless reincarnation.avif" class="img-fluid movie-fixed-size" alt="Mushoku Tensei"></a>
+                                    <div class="popup-info">
+                                        <h5>Mushoku Tensei</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/laid back camp.jpe" class="img-fluid movie-fixed-size" alt="Laid Back Camp"></a>
+                                    <div class="popup-info">
+                                        <h5>Laid Back Camp</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- Second Slide -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/your lie in april.jpe" class="img-fluid movie-fixed-size" alt="Your Lie in April"></a>
+                                    <div class="popup-info">
+                                        <h5>Your Lie in April</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/horimiya.avif" class="img-fluid movie-fixed-size" alt="Horimiya"></a>
+                                    <div class="popup-info">
+                                        <h5>Horimiya</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/konosuba gods blessing on this wonderful world.jpe" class="img-fluid movie-fixed-size" alt="Konosuba"></a>
+                                    <div class="popup-info">
+                                        <h5>Konosuba</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/the disastrous life of saiki k.jpe" class="img-fluid movie-fixed-size" alt="The Disastrous Life of Saiki K"></a>
+                                    <div class="popup-info">
+                                        <h5>The Disastrous Life of Saiki K</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/horimiya.avif" class="img-fluid movie-fixed-size" alt="Undead Unluck">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#browseAnimeCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#browseAnimeCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+
+                    <h2>Most Popular</h2>
+                </div>
+                <div id="browseAnimeCarousel1" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" > 
+                        <!-- First Slide -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/jujutsu kaisen.jpe" class="img-fluid movie-fixed-size" alt="Jujutsu Kaisen"></a>
+                                    <div class="popup-info">
+                                        <h5>Jujutsu Kaisen</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/demon slayer.webp" class="img-fluid movie-fixed-size" alt="Demon Slayer"></a>
+                                    <div class="popup-info">
+                                        <h5>Demon Slayer</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"> <img src="../images/filters_quality(95)format(webp).webp" class="img-fluid movie-fixed-size" alt="Filters"></a>
+                                    <div class="popup-info">
+                                        <h5>Filters</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/the stories of girls who couldn't be magicians.avif" class="img-fluid movie-fixed-size" alt="Fate"></a>
+                                    <div class="popup-info">
+                                        <h5>Blue Lock Season 2</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/konosuba gods blessing on this wonderful world.jpe" class="img-fluid movie-fixed-size" alt="Attack on Titan">
+                    
+                    <!-- Second Slide -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/solo leveling.avif" class="img-fluid movie-fixed-size" alt="Solo Leveling"></a>
+                                    <div class="popup-info">
+                                        <h5>Solo Leveling</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/undead unluck.webp" class="img-fluid movie-fixed-size" alt="Undead Unluck"></a>
+                                    <div class="popup-info">
+                                        <h5>Undead Unluck</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"> <img src="../images/attack on titan.avif" class="img-fluid movie-fixed-size" alt="Attack on Titan"></a>
+                                    <div class="popup-info">
+                                        <h5>Attack on Titan</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/fate.jpe" class="img-fluid movie-fixed-size" alt="Fate"></a>
+                                    <div class="popup-info">
+                                        <h5>Fate</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/the disastrous life of saiki k.jpe" class="img-fluid movie-fixed-size" alt="Fate">
-                        </div>
-                    </div>
+                    <!-- Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#browseAnimeCarousel1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#browseAnimeCarousel1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
                 
                 <div class="container">
-                    <h2>Recent Releases</h2>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/blue lock season 2.webp" class="img-fluid movie-fixed-size" alt="Solo Leveling">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/re zero starting life in another world.avif" class="img-fluid movie-fixed-size" alt="Undead Unluck">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/shangri la frontier.avif" class="img-fluid movie-fixed-size" alt="Attack on Titan">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/dan da dan.avif" class="img-fluid movie-fixed-size" alt="Fate">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row align-items-center">
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/fairy tail 100 years quest.avif" class="img-fluid movie-fixed-size" alt="Solo Leveling">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/trillion game.avif" class="img-fluid movie-fixed-size" alt="Undead Unluck">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/mecha ude mechanical arms.avif" class="img-fluid movie-fixed-size" alt="Attack on Titan">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/the stories of girls who couldn't be magicians.avif" class="img-fluid movie-fixed-size" alt="Fate">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <h2>Most Popular</h2>
-                </div>
-                <div class="row align-items-start">
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/jujutsu kaisen.jpe" class="img-fluid movie-fixed-size" alt="Jujutsu Kaisen">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/demon slayer.webp" class="img-fluid movie-fixed-size" alt="Demon Slayer">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/filters_quality(95)format(webp).webp" class="img-fluid movie-fixed-size" alt="Filters">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/frieren.avif" class="img-fluid movie-fixed-size" alt="Frieren">
-                        </div>
-                    </div>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/solo leveling.avif" class="img-fluid movie-fixed-size" alt="Solo Leveling">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/undead unluck.webp" class="img-fluid movie-fixed-size" alt="Undead Unluck">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/attack on titan.avif" class="img-fluid movie-fixed-size" alt="Attack on Titan">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/fate.jpe" class="img-fluid movie-fixed-size" alt="Fate">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
                     <h2>Action</h2>
                 </div>
-                <div class="row align-items-center">
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/vinland saga.avif" class="img-fluid movie-fixed-size" alt="Solo Leveling">
+                 <div id="browseAnimeCarousel2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" > 
+                    <!-- First Slide -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/vinland saga.avif" class="img-fluid movie-fixed-size" alt="Solo Leveling"></a>
+                                    <div class="popup-info">
+                                        <h5>Vinland Saga</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/black lagoon.avif" class="img-fluid movie-fixed-size" alt="Undead Unluck"></a>
+                                    <div class="popup-info">
+                                        <h5>Black Lagoon</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/mob psycho 100.jpe" class="img-fluid movie-fixed-size" alt="Attack on Titan"></a>
+                                    <div class="popup-info">
+                                        <h5>Mob Psycho</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/fate stay night.avif" class="img-fluid movie-fixed-size" alt="Fate"></a>
+                                    <div class="popup-info">
+                                        <h5>Fate Stay Night</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/black lagoon.avif" class="img-fluid movie-fixed-size" alt="Undead Unluck">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/mob psycho 100.jpe" class="img-fluid movie-fixed-size" alt="Attack on Titan">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/fate stay night.avif" class="img-fluid movie-fixed-size" alt="Fate">
+                    
+                    <!-- Second Slide -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/kill la kill.avif" class="img-fluid movie-fixed-size" alt="Solo Leveling"></a>
+                                    <div class="popup-info">
+                                        <h5>/Kill La Kill</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/Akame ga kill.jpg" class="img-fluid movie-fixed-size" alt="Undead Unluck"></a>
+                                    <div class="popup-info">
+                                        <h5>Akame Ga Kill</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/gurren lagann.avif" class="img-fluid movie-fixed-size" alt="Attack on Titan"></a>
+                                    <div class="popup-info">
+                                        <h5>Gurren Lagann</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/bungo stray dogs.avif" class="img-fluid movie-fixed-size" alt="Fate"></a>
+                                    <div class="popup-info">
+                                        <h5>Bungo Stray Dogs</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row align-items-center">
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/kill la kill.avif" class="img-fluid movie-fixed-size" alt="Solo Leveling">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/Akame ga kill.jpg" class="img-fluid movie-fixed-size" alt="Undead Unluck">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/gurren lagann.avif" class="img-fluid movie-fixed-size" alt="Attack on Titan">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/bungo stray dogs.avif" class="img-fluid movie-fixed-size" alt="Fate">
-                        </div>
-                    </div>
-                </div>
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#browseAnimeCarousel2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#browseAnimeCarousel2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+                
                 <div class="container">
                     <h2>Adventure</h2>
                 </div>
-                <div class="row align-items-center">
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/Made in abyss.jpe" class="img-fluid movie-fixed-size" alt="Solo Leveling">
+                <div id="browseAnimeCarousel3" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" > 
+                        <!-- First Slide -->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="movie-img-wrapper">
+                                        <a href="#"><img src="../images/Made in abyss.jpe" class="img-fluid movie-fixed-size" alt="Solo Leveling"></a>
+                                        <div class="popup-info">
+                                            <h5>Made In Abyss</h5>
+                                            <button>Add to Watchlist</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="movie-img-wrapper">
+                                        <a href="#"><img src="../images/hunter x hunter.avif" class="img-fluid movie-fixed-size" alt="Undead Unluck"></a>
+                                        <div class="popup-info">
+                                            <h5>Hunter x Hunter</h5>
+                                            <button>Add to Watchlist</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="movie-img-wrapper">
+                                        <a href="#"><img src="../images/mushoku tensei jobless reincarnation.avif" class="img-fluid movie-fixed-size" alt="Mushoku Tensei"></a>
+                                        <div class="popup-info">
+                                            <h5>mushoku tensei jobless reincarnation</h5>
+                                            <button>Add to Watchlist</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="movie-img-wrapper">
+                                        <a href="#"><img src="../images/the rising of the shield hero.jpe" class="img-fluid movie-fixed-size" alt="Attack on Titan"></a>
+                                        <div class="popup-info">
+                                            <h5>The rising of the Shield hero</h5>
+                                            <button>Add to Watchlist</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/hunter x hunter.avif" class="img-fluid movie-fixed-size" alt="Undead Unluck">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/the rising of the shield hero.jpe" class="img-fluid movie-fixed-size" alt="Attack on Titan">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/no game no life.jpe" class="img-fluid movie-fixed-size" alt="Fate">
+                        
+                        <!-- Second Slide -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/kill la kill.avif" class="img-fluid movie-fixed-size" alt="Solo Leveling"></a>
+                                    <div class="popup-info">
+                                        <h5>/Kill La Kill</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/Akame ga kill.jpg" class="img-fluid movie-fixed-size" alt="Undead Unluck"></a>
+                                    <div class="popup-info">
+                                        <h5>Akame Ga Kill</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/gurren lagann.avif" class="img-fluid movie-fixed-size" alt="Attack on Titan"></a>
+                                    <div class="popup-info">
+                                        <h5>Gurren Lagann</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/bungo stray dogs.avif" class="img-fluid movie-fixed-size" alt="Fate"></a>
+                                    <div class="popup-info">
+                                        <h5>Bungo Stray Dogs</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row align-items-center">
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/the promised neverland.avif" class="img-fluid movie-fixed-size" alt="Solo Leveling">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/magi the labyrinth of magic.jpe" class="img-fluid movie-fixed-size" alt="Undead Unluck">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/grimgar ashes and illusions.jpe" class="img-fluid movie-fixed-size" alt="Attack on Titan">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/log horizon.avif" class="img-fluid movie-fixed-size" alt="Fate">
-                        </div>
-                    </div>
-                </div>
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#browseAnimeCarousel3" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#browseAnimeCarousel3" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
                 <div class="container">
                     <h2>Comedy</h2>
                 </div>
-                <div class="row align-items-center">
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/asobi asobase.avif" class="img-fluid movie-fixed-size" alt="Solo Leveling">
+                 <div id="browseAnimeCarousel4" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" > 
+                    <!-- First Slide -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/log horizon.avif" class="img-fluid movie-fixed-size" alt="Fate"></a>
+                                    <div class="popup-info">
+                                        <h5>log horizon</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/asobi asobase.avif" class="img-fluid movie-fixed-size" alt="Solo Leveling"></a>
+                                    <div class="popup-info">
+                                        <h5>asobi asobase</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"> <img src="../images/nichijou.jpe" class="img-fluid movie-fixed-size" alt="Undead Unluck"></a>
+                                    <div class="popup-info">
+                                        <h5>nichijou</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/haven't you heard i'm sakamoto.avif" class="img-fluid movie-fixed-size" alt="Attack on Titan"></a>
+                                    <div class="popup-info">
+                                        <h5>haven't you heard i'm sakamoto</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/nichijou.jpe" class="img-fluid movie-fixed-size" alt="Undead Unluck">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/haven't you heard i'm sakamoto.avif" class="img-fluid movie-fixed-size" alt="Attack on Titan">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/monthly girls nozaki kun.avif" class="img-fluid movie-fixed-size" alt="Fate">
+                    
+                    <!-- Second Slide -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/monthly girls nozaki kun.avif" class="img-fluid movie-fixed-size" alt="Fate"></a>
+                                    <div class="popup-info">
+                                        <h5>monthly girls nozaki kun</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/gintama.avif" class="img-fluid movie-fixed-size" alt="Solo Leveling"></a>
+                                    <div class="popup-info">
+                                        <h5>gintama</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/the devil is a part timer.jpe" class="img-fluid movie-fixed-size" alt="Undead Unluck"></a>
+                                    <div class="popup-info">
+                                        <h5>the devil is a part timer</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="movie-img-wrapper">
+                                    <a href="#"><img src="../images/school rumble.jpe" class="img-fluid movie-fixed-size" alt="Attack on Titan"></a>
+                                    <div class="popup-info">
+                                        <h5>school rumble</h5>
+                                        <button>Add to Watchlist</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row align-items-center">
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/gintama.avif" class="img-fluid movie-fixed-size" alt="Solo Leveling">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/the devil is a part timer.jpe" class="img-fluid movie-fixed-size" alt="Undead Unluck">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/school rumble.jpe" class="img-fluid movie-fixed-size" alt="Attack on Titan">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="movie-img-wrapper">
-                            <img src="../images/kaguya sama love is war.avif" class="img-fluid movie-fixed-size" alt="Fate">
-                        </div>
-                    </div>
-                </div>
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#browseAnimeCarousel4" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#browseAnimeCarousel4" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
             
         </section>
-        
-        
-    </main>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 address">
-                    <p>400 University Drive Suite 200 Coral Gables, FL 33134 USA</p>
-                </div>
-                <div class="col-md-6 text-end footer-links">
-                    <a href="#">Payment Options</a> |
-                    <a href="#">Returns</a> |
-                    <a href="#">Privacy Policies</a>
-                </div>
-            </div>
-            <!--<div class="row newsletter">
-                <div class="col-12 text-center">
-                    <p>Newsletter</p>
-                    <form>
-                        <input type="email" placeholder="Enter Your Email Address" class="form-control w-50 mx-auto">
-                        <button type="submit" class="btn btn-primary mt-2">SUBSCRIBE</button>
-                    </form>
-                </div>
-            </div>-->
-            <div class="row copyright">
-                <div class="col-12 text-center">
-                    <p>© 2023 Nihon Mystica. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+
+
+</main>
+
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-md-6 address">
+    <p>400 University Drive Suite 200 Coral Gables, FL 33134 USA</p>
+</div>
+<div class="col-md-6 text-end footer-links">
+    <a href="#">Payment Options</a> |
+    <a href="#">Returns</a> |
+    <a href="#">Privacy Policies</a>
+</div>
+</div>
+<!--<div class="row newsletter">
+<div class="col-12 text-center">
+    <p>Newsletter</p>
+    <form>
+        <input type="email" placeholder="Enter Your Email Address" class="form-control w-50 mx-auto">
+        <button type="submit" class="btn btn-primary mt-2">SUBSCRIBE</button>
+    </form>
+</div>
+</div>-->
+<div class="row copyright">
+<div class="col-12 text-center">
+    <p>© 2023 Nihon Mystica. All rights reserved.</p>
+</div>
+</div>
+</div>
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
+
+
