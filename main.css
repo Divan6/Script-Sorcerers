@@ -1,0 +1,818 @@
+body{
+    margin: 0;
+}
+
+.group-icon {
+    position: absolute;
+    /* top: -58px;
+    left: -88px; */
+    width: 120rem;
+    height: 67.5rem;
+}
+
+.deathNoteP {
+    position: absolute;
+    top: 16.891rem;
+    left: 75.459rem;
+    width: 17.938rem;
+    /* height: 453.6px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.blackCloverP {
+    position: absolute;
+    top: 29.312rem;
+    left: 93.41rem;
+    width: 17.938rem;
+    /* height: 443.8px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.myHeroP {
+    position: absolute;
+    top: 44.242rem;
+    left: 72.941rem;
+    width: 17.938rem;
+    /* height: 474.9px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.spyFamilyP {
+    position: absolute;
+    top: -15.412rem;
+    left: 40.127rem;
+    width: 17.938rem;
+    /* height: 474.1px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.hunterHunterP {
+    position: absolute;
+    top: 56.336rem;
+    left: 91.019rem;
+    width: 17.938rem;
+    /* height: 453.2px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.haikyuP {
+    position: absolute;
+    top: 40.168rem;
+    left: 35.438rem;
+    width: 17.938rem;
+    /* height: 453.2px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.jujutsuP {
+    position: absolute;
+    top: 13.223rem;
+    left: 37.849rem;
+    width: 17.938rem;
+    /* height: 442.2px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.attackTitanP {
+    position: absolute;
+    top: 55.253rem;
+    left: 53.291rem;
+    width: 17.938rem;
+    /* height: 435.2px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.onePunchP {
+    position: absolute;
+    top: -42.56px;
+    left: 927.95px;
+    width: 17.938rem;
+    /* height: 474.1px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.onTitanP {
+    position: absolute;
+    top: -175.39px;
+    left: 1245.79px;
+    width: 17.938rem;
+    /* height: 458.9px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.demonSlayerP {
+    position: absolute;
+    top: 2.73px;
+    left: 1532.3px;
+    width: 17.938rem;
+    /* height: 474.1px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+.onePieceP {
+    position: absolute;
+    top: 418.77px;
+    left: 889.59px;
+    width: 17.938rem;
+    /* height: 433.9px; */
+    object-fit: contain;
+    transform: rotate(4.95deg);
+}
+
+
+.ellipse-parent {
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    height: 67.5rem;
+    overflow: hidden;
+    text-align: left;
+    font-size: 13px;
+    color: #808080;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+#contact {
+    position: absolute;
+    top: 12.313rem;
+    left: 9.75rem;
+    border-radius: 32px;
+    background-color: rgba(255, 255, 255, 0.59);
+    width: 23.938rem;
+    height: 42.875rem;
+    padding-left: 4.625rem;
+    /* padding: 1em 2em; */
+}
+
+fieldset {
+    border: none;
+}
+
+#contact input, #contact textarea{
+    /* width: 309px; */
+    /* border: 1px solid #808080; */
+    background-color: #fff;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+}
+
+#contact input, #contact textarea, #contact button{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Noto Sans Jp", sans-serif;
+}
+
+#contact button{
+    cursor: pointer;
+    width: 11.438rem;
+    height: 3.125rem;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-family: "Noto Sans Jp", sans-serif;
+}
+
+#contact p{
+    color: #000;
+    /* display: block; */
+    font-family: "Noto Sans Jp", sans-serif;
+    margin: 0%;
+}
+
+.nihonnet{
+    font-size: 0;
+    padding: 0%;
+    /* position: absolute; */
+    display: inline-block;
+    width: 195px;
+    height: 36px;
+    padding-top: 61px;
+}
+
+.nihonnet p{
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.signup{
+    font-size: 0;
+    padding: 0%;
+    /* position: absolute; */
+    display: inline-block;
+    width: 267px;
+    height: 64px;
+}
+
+.signup p{
+    font-weight: 600;
+    font-size: 64px;
+}
+
+
+.names input{
+    width: 9.438rem;
+}
+
+
+.flex{
+    display: flex;
+    font-size: 0;
+    margin-bottom: 5px;
+}
+
+
+.pswd{
+    font-size: 0;
+    margin-bottom: 5px;
+}
+
+.pswd input{
+    width: 19.313rem;
+}
+
+.confirmPswd{
+    font-size: 0;
+    margin-bottom: 12px;
+}
+
+.confirmPswd input{
+    width: 19.313rem;
+}
+
+
+.mail{
+    font-size: 0;
+    margin-bottom: 12px;
+}
+
+.mail input{
+    width: 19.313rem;
+}
+
+
+.socials{
+    display: flex;
+    margin-bottom: 61px;
+    margin-top: 16px;
+}
+
+/* .iconO{
+    flex: 10%;
+    padding: 0%;
+    display: inline-block;
+    padding-right: 20px;
+} */
+
+.iconO img{
+    width: 30px;
+    height: 30px;
+    margin: 0%;
+    padding-right: 20px;
+}
+
+.icon1 img{
+    width: 30px;
+    height: 30px;
+    margin: 0%;
+    padding-right: 20px;
+}
+
+.icon2 img{
+    width: 30px;
+    height: 30px;
+    margin: 0%;
+    padding-right: 20px;
+}
+
+.icon3 img{
+    width: 30px;
+    height: 30px;
+    margin: 0%;
+}
+
+.names{
+    display: inline-block;
+    /* width: 151px; */
+}
+
+.button{
+    font-size: 0;
+    /* margin-bottom: 77px; */
+}
+
+#contact2 {
+    position: absolute;
+    top: 14.438rem;
+    left: 9.75rem;
+    border-radius: 32px;
+    background-color: rgba(255, 255, 255, 0.59);
+    width: 19.313rem;
+    height: 38.625rem;
+    padding-left: 4.625rem;
+    padding-right: 4.625rem;
+    /* padding: 1em 2em; */
+}
+
+#contact2 input, #contact2 textarea{
+    /* width: 309px; */
+    /* border: 1px solid #808080; */
+    background-color: #fff;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+}
+
+#contact2 input, #contact2 textarea, #contact2 button{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Noto Sans Jp", sans-serif;
+}
+
+#contact2 button{
+    cursor: pointer;
+    width: 11.438rem;
+    height: 3.125rem;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-family: "Noto Sans Jp", sans-serif;
+}
+
+#contact2 p{
+    color: #000;
+    /* display: block; */
+    font-family: "Noto Sans Jp", sans-serif;
+    margin: 0%;
+}
+
+.psp {
+    text-align: right;
+
+}
+
+.button2{
+    font-size: 0;
+    /* margin-bottom: 77px; */
+    margin-top: 12px;
+}
+
+.single-body{
+    background-color: #1C1C1C;
+    width: 100vw;
+    height: 100vh;
+}
+
+.dark-section{
+    background-color: #1c1c1c;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+/* .image-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  } */
+
+  .absolute-image {
+    position: absolute;
+    width: 511px;
+    height: 803px;
+    left: 113px;
+    top: 209px;
+  }
+
+  /* .text-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  } */
+
+  .absolute-text {
+    position: absolute;
+    color: white;
+    font-size: 66px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    left: 706px;
+    top: 328px;
+    word-wrap: break-word;
+  }
+
+  /* .text-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  } */
+
+  .absolute-text-jp {
+    position: absolute;
+    color: white;
+    font-size: 34px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    left: 706px;
+    top: 419px;
+    word-wrap: break-word;
+  }
+
+  .watchlist-container {
+    position: absolute;
+    width: 214px;
+    height: 42px;
+    left: 706px;
+    top: 548px;
+    border: 1.5px solid #FF7F11;
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+    background-color: #1C1C1C;
+  }
+
+  .bookmark-icon {
+    width: 33px;
+    height: 33px;
+  }
+
+  .watchlist-text {
+    color: #FF7F11;
+    font-size: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    margin-left: 7px;
+  }
+
+  .text-container-des {
+    position: absolute;
+    width: 864px;
+    /* height: 256px; */
+    left: 706px;
+    top: 655px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+
+  .tag-container {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    left: 706px;
+    top: 953px;
+  }
+
+  .tag-box {
+    width: 88px;
+    height: 34px;
+    background-color: #FF7F11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tag-text {
+    color: white;
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+  }
+  
+
+/* Basic resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.homepage-body {
+    font-family: Arial, sans-serif;
+    background-color: #FFB7C5;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+
+/* Main header styling */
+.homepage-header {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 1rem 0;
+    font-family: "Noto Sans JP", sans-serif;
+    border: 10px solid #ff6600; /* Orange border */
+    border-radius: 15px; /* Rounded corners */
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Adds space between navigation items */
+}
+
+.nav-item {
+    display: inline-flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ccc; /* Subtle hover effect */
+}
+
+/* Search Container Styling */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 0; /* Removed extra margin so it stays close to the Watchlist */
+}
+
+.search-input {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 15px;
+}
+
+.search-button {
+    padding: 8px;
+    background-color: #fd9311;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-button img {
+    width: 16px;
+    height: 16px;
+}
+
+/* Login and download links */
+.login-download {
+    margin-top: 10px;
+    color: #fff;
+}
+
+.login-download a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.login-download a:hover {
+    color: #ccc;
+}
+
+/* Adjust for mobile responsiveness */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-container {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+}
+
+/* Dropdown Menu Styling */
+.nav-item.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    content: '▼';
+    margin-left: 5px;
+    font-size: 0.7rem;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    border: 1px solid #ff6600; /* Matches header border */
+    border-radius: 12px;
+    padding: 12px;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+.dropdown-menu .dropdown-item {
+    color: white;
+    padding: 8px 13px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #ff6600; /* Highlight on hover */
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Adjust for mobile responsiveness */
+@media (max-width: 768px) {
+    .nav-item.dropdown {
+        text-align: left;
+    }
+    
+    .dropdown-menu {
+        width: 100%;
+        top: 100%;
+        left: 0;
+    }
+}
+
+
+/* Banner section */
+.banner {
+  
+    color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    /* Adjust the height to your preference */
+    background-image: url('../assets/images/Banner\ from\ Script\ Sorcerers.png');
+    /* Path to your image */
+    background-size: cover;
+    /* Ensures the image covers the entire banner */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+}
+
+.banner h2 {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.banner p {
+    font-size: 1.2rem;
+}
+
+.full-background {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1C1C1C;
+    position: relative;
+}
+
+.icon-container {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 305px;
+    top: 718px;
+}
+
+.icon-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* border: 2px solid white; */
+}
+
+.trash-icon-container {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 354px;
+    top: 718px;
+}
+
+.trash-icon {
+    width: 100%;
+    height: 100%;
+  }
+
+  .bookmark-icon-container-white {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 855px;
+    top: 184px;
+  }
+
+  .bookmark-icon-white {
+    width: 100%;
+    height: 100%;
+  }
+
+  .one-piece-text {
+    position: absolute;
+    left: 113px;
+    top: 678px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+
+  .my-list-text {
+    position: absolute;
+    left: 897px;
+    top: 170px;
+    color: white;
+    font-size: 38px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+
+  
+
+  .star-container {
+    position: absolute;
+    display: flex;
+    gap: 10px; /* space between stars */
+    left: 706px;
+    top: 494px;
+  }
+
+  .star-icon {
+    width: 33px;
+    height: 33px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .star-icon:hover {
+    transform: scale(1.1);
+  }
+
+  
+
+
+
+
+  /* Footer styling */
+footer {
+    background-color: #FFB7C5;
+    color: #1c1c1c;
+    padding: 2rem 0;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+footer .address,
+footer .footer-links {
+    margin-bottom: 1rem;
+}
+
+footer .footer-links a {
+    color: #1c1c1c;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+footer .newsletter form {
+    margin-top: 1rem;
+}
+
+footer input[type="email"] {
+    padding: 0.5rem;
+}
+
+footer button {
+    padding: 0.5rem 1rem;
+    background-color: #4b4b4b;
+    color: #fff;
+    border: none;
+}
+
+footer .copyright {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
