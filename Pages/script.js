@@ -100,6 +100,7 @@ async function fetchAnimeData() {
 //     }
 
 // Display Anime Carousel with 4 images per slide and hover effect
+// Function to display the anime carousel
 function displayAnimeCarousel(animeList) {
     const carouselInner = document.getElementById("animeCarouselInner");
     for (let i = 0; i < animeList.length; i += 4) {
@@ -114,13 +115,13 @@ function displayAnimeCarousel(animeList) {
         for (let j = i; j < i + 4 && j < animeList.length; j++) {
             const anime = animeList[j];
 
-            // column div
+            // Column div
             const colDiv = document.createElement("div");
             colDiv.classList.add("col-3", "position-relative");
 
-            // clickable image link
+            // Clickable image link to `SinglemoviePage.html`
             const imgLink = document.createElement("a");
-            imgLink.href = `singlepage.html?id=${anime.mal_id}`;
+            imgLink.href = `SinglemoviePage.html?id=${anime.mal_id}`; // Linking to the local SinglemoviePage
             imgLink.style.position = "relative";
             imgLink.style.display = "block";
 
@@ -130,7 +131,7 @@ function displayAnimeCarousel(animeList) {
             img.alt = anime.title;
             img.classList.add("img-fluid", "movie-fixed-size");
 
-            // Overlay for title and button, hidden
+            // Overlay for title and button, initially hidden
             const titleOverlay = document.createElement("div");
             titleOverlay.classList.add("popup-info");
             titleOverlay.style.position = "absolute";
@@ -144,7 +145,7 @@ function displayAnimeCarousel(animeList) {
             titleOverlay.style.transform = "translateY(100%)"; 
             titleOverlay.style.transition = "transform 0.3s ease-in-out";
 
-            // hover effect
+            // Hover effect to show overlay
             imgLink.addEventListener("mouseenter", () => {
                 titleOverlay.style.transform = "translateY(0)"; 
             });
@@ -164,9 +165,9 @@ function displayAnimeCarousel(animeList) {
             watchlistButton.style.cursor = "pointer";
             watchlistButton.style.borderRadius = "3px";
 
-            // Watchlist button 
+            // Add to watchlist button
             watchlistButton.addEventListener("click", (event) => {
-                event.stopPropagation(); 
+                event.stopPropagation(); // Prevents image link navigation when clicking the button
                 addToWatchlist(anime);
             });
 
@@ -182,12 +183,10 @@ function displayAnimeCarousel(animeList) {
     }
 }
 
-// add anime to watchlist and store in localStorage
+// Function to add anime to watchlist and store in localStorage
 function addToWatchlist(anime) {
-    
     const watchlist = JSON.parse(localStorage.getItem("animeWatchlist")) || [];
 
-    
     if (!watchlist.some((item) => item.mal_id === anime.mal_id)) {
         watchlist.push(anime);
         localStorage.setItem("animeWatchlist", JSON.stringify(watchlist));
@@ -198,7 +197,9 @@ function addToWatchlist(anime) {
     }
 }
 
+// Initialize fetch and display
 fetchAnimeData();
+
 
 // form submission
 document.getElementById('newsletter-form').addEventListener('submit', function(event) {
