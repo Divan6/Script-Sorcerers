@@ -3,6 +3,7 @@
 <head>
   	<meta charset="utf-8">
   	<meta name="viewport" content="initial-scale=1, width=device-width">
+    <title>Anime Details</title>
 
 	  <link rel="preconnect" href="https://fonts.googleapis.com">
 	  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,11 +28,10 @@
                         <ul class="nav">
 
                             <li class="nav-item">
-                                <a href="homepage.html" class="nav-link">Home</a>
+                                <a href="index.html" class="nav-link">Home</a>
                             </li>
                             <li class="nav-item"><a href="#" class="nav-link">Anime</a></li>
                             
-                            <!-- Updated Anime Section with Dropdown -->
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" id="animeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Genres</a>
                                 <ul class="dropdown-menu" aria-labelledby="animeDropdown">
@@ -58,7 +58,6 @@
                                 </a>
                             </li>
                             
-                            <!-- Search is now part of the nav items, right after Watchlist -->
                             <li class="nav-item search-container">
                                 <form id="searchForm">
                                     <input type="text" id="searchInput" placeholder="Search..." class="search-input">
@@ -77,22 +76,50 @@
         </div>
     </header>
 
-
     <main>
-        <div class="anime-details">
-            <h1 id="anime-title">Loading...</h1>
-            <img id="anime-image" src="" alt="Anime Image">
-            <p id="anime-description">Loading description...</p>
+        <div id="loading-indicator" class="text-center my-5">
+            <p>Loading...</p>
+        </div>
+
+        <div class="anime-details-container container my-5" style="display: none;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img id="anime-image" src="" alt="Anime Image" class="img-fluid rounded">
+                </div>
+
+                <div class="col-md-8">
+                    <h1 id="anime-title">Anime Title</h1>
+
+                    <div class="watchlist-container d-flex align-items-center my-3">
+                        <img class="bookmark-icon me-2" src="../assets/images/bookmark.svg" alt="Bookmark Icon">
+                        <span class="watchlist-text">Add To Watchlist</span>
+                    </div>
+
+                    <div id="anime-description" class="mb-4">
+                        Loading description...
+                    </div>
+
+                    <div class="tag-container">
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
+<main>
 
+
+    <footer>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="../js/singleview.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   	
 
-<script src="../js/singleview.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 </html>
-
-

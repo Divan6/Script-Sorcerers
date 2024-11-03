@@ -1,5 +1,8 @@
-body{
+body {
     margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #1b1b1b; /* Example background color */
+    color: #fff; /* Example text color */
 }
 
 /* .ellipse-div {
@@ -603,12 +606,13 @@ fieldset {
     position: absolute;
     width: 228px;
     height: 42px;
-    left: 706px;
-    top: 556px;
+ 
+ 
     border: 1.5px solid #FF7F11;
     display: flex;
     align-items: center;
     padding-left: 4px;
+    cursor: pointer;
   }
 
   .bookmark-icon {
@@ -638,12 +642,30 @@ fieldset {
   }
 
   .tag-container {
-    position: absolute;
     display: flex;
     gap: 10px;
-    left: 706px;
-    top: 953px;
+    flex-wrap: wrap; /* Allow tags to wrap on smaller screens */
+}
+
+  .tag-container {
+  
+    display: flex;
+    gap: 10px;
+    top: 10%;
   }
+
+  .watchlist-container.active {
+    background-color: #FF7F11; /* Orange background */
+    border-color: #FF7F11;     /* Match border with background */
+}
+
+.watchlist-container.active .watchlist-text {
+    color: #fff;               /* White text for contrast */
+}
+
+.watchlist-container.active .bookmark-icon {
+    filter: brightness(0) invert(1); /* Optional: Invert icon color for better visibility */
+}
 
   .tag-box {
     width: 88px;
@@ -742,3 +764,121 @@ fieldset {
 .login-download a:hover {
     color: #ccc;
 }
+
+/* Anime Details Container */
+.anime-details-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .anime-details-container .row {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* Anime Image */
+#anime-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Anime Title */
+#anime-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Watchlist Container */
+.watchlist-container {
+    /* Removed absolute positioning */
+    position: relative;
+    border: 1.5px solid #FF7F11;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(255, 127, 17, 0.1); /* Optional: Light background for visibility */
+    width: fit-content;
+    margin-bottom: 1rem; /* Added space below watchlist button */
+}
+
+.bookmark-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.watchlist-text {
+    color: #FF7F11;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+
+/* Anime Description */
+#anime-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Genre Tags */
+
+
+.tag-box {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.tag-text {
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+    #anime-title {
+        font-size: 2rem;
+    }
+
+    .watchlist-text {
+        font-size: 1rem;
+    }
+
+    #anime-description {
+        font-size: 0.9rem;
+    }
+
+    .tag-text {
+        font-size: 0.8rem;
+    }
+
+    /* Adjust watchlist-container width */
+    .watchlist-container {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Loading Indicator */
+#loading-indicator {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 50px;
+}
+
+/* Additional Styles */
+
+/* Ensuring Images in Movie Library are Consistent */
+.movie-fixed-size {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
