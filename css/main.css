@@ -412,3 +412,11 @@ footer .copyright {
 .popup-info button:hover {
     background-color: #ff4500; /* Darker shade on hover */
 }
+
+.movie-img-wrapper {
+    overflow: hidden;
+}
+
+.movie-img-wrapper:hover .popup-info {
+    transform: translateY(0); /* Slide up on hover */
+}

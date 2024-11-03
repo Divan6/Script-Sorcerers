@@ -1,4 +1,5 @@
-/ // API 
+console.log("Linked")
+// API
 // const myHeaders = new Headers();
 // myHeaders.append("x-apihub-key", "qRpABCZsUymYdltQ4uvdJwgKvBH3dmTPKVQqYi2CGAsKafLFgO");
 // myHeaders.append("x-apihub-host", "AnimeList-API.allthingsdev.co");
@@ -119,7 +120,7 @@ function displayAnimeCarousel(animeList) {
 
             // clickable image link
             const imgLink = document.createElement("a");
-            imgLink.href = `SinglemoviePage.html?id=${anime.mal_id}`;
+            imgLink.href = `singlepage.html?id=${anime.mal_id}`;
             imgLink.style.position = "relative";
             imgLink.style.display = "block";
 
