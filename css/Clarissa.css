@@ -368,3 +368,39 @@ footer .copyright {
     margin-top: 1rem;
     font-size: 0.8rem;
 }
+
+/* java */
+#watchlistCount {
+    text-align: center;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.anime-item {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    width: 180px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.anime-thumbnail {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.remove-button {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.remove-button:hover {
+    background-color: #cc3700;
+}
