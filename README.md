@@ -8,6 +8,7 @@
 
 
 This website is an anime hosting website that has a blend of crunchyrolls aesthetics blended with netflix.
+
 ## Website Link
 
 
@@ -99,3 +100,8 @@ fetch("https://AnimeList-API.proxy-production.allthingsdev.co/v4/anime?q=Naruto"
    .catch((error) => console.error(error));
 
 ## Team Roles
+
+Divan Hattingh -Backend Javascript
+Daniel Jooste-Backend Javascript
+Anke Heine-Frontend Html & CSS
+Clarissa Wang- Frontend Html & CSS
