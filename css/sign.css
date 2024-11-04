@@ -745,3 +745,7 @@ fieldset {
 .login-download a:hover {
     color: #ccc;
 }
+
+.imgc{
+position: relative;
+}

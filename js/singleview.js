@@ -1,11 +1,13 @@
 $(document).ready(function() {
+    // Function to get query parameters
     function getQueryParam(param) {
         const urlParams = new URLSearchParams(window.location.search);
         return urlParams.get(param);
     }
 
+    // Get the 'q' parameter from the URL
     const query = getQueryParam('q');
-    console.log('Retrieved query:', query); 
+    console.log('Retrieved query:', query); // Debugging: Verify query
 
     if (query) {
         // API settings
@@ -20,6 +22,7 @@ $(document).ready(function() {
             },
         };
 
+        // Show loading indicator and hide anime details
         $('#loading-indicator').show();
         $('.anime-details-container').hide();
 
