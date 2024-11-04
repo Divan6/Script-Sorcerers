@@ -7,7 +7,7 @@
 ## Description
 
 
-This website is an anime hosting website that has a blend of crunchyrolls aesthetics blended with netflix.
+This website is an anime hosting website that has a blend of crunchyrolls aesthetics with netflix.
 
 ## Website Link
 
