@@ -1,5 +1,8 @@
-body{
+body {
     margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #1b1b1b; /* Example background color */
+    color: #fff; /* Example text color */
 }
 
 /* .ellipse-div {
@@ -543,3 +546,339 @@ fieldset {
     /* margin-bottom: 77px; */
     margin-top: 12px;
 }
+
+.dark-section{
+    background-color: #1c1c1c;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .absolute-image {
+    position: absolute;
+    width: 511px;
+    height: 803px;
+    left: 113px;
+    top: 209px;
+  }
+
+  /* .text-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  } */
+
+  .absolute-text {
+    position: absolute;
+    color: white;
+    font-size: 96px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    left: 706px;
+    top: 328px;
+    word-wrap: break-word;
+  }
+
+  /* .text-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  } */
+
+  .absolute-text-jp {
+    position: absolute;
+    color: white;
+    font-size: 64px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    left: 706px;
+    top: 439px;
+    word-wrap: break-word;
+  }
+
+  .watchlist-container {
+    position: absolute;
+    width: 228px;
+    height: 42px;
+ 
+ 
+    border: 1.5px solid #FF7F11;
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+    cursor: pointer;
+  }
+
+  .bookmark-icon {
+    width: 33px;
+    height: 33px;
+  }
+
+  .watchlist-text {
+    color: #FF7F11;
+    font-size: 22px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    margin-left: 7px;
+  }
+
+  .text-container-des {
+    position: absolute;
+    /* width: 864px;
+    height: 256px; */
+    left: 706px;
+    top: 655px;
+    color: white;
+    font-size: 22px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+
+  .tag-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* Allow tags to wrap on smaller screens */
+}
+
+  .tag-container {
+  
+    display: flex;
+    gap: 10px;
+    top: 10%;
+  }
+
+  .watchlist-container.active {
+    background-color: #FF7F11; /* Orange background */
+    border-color: #FF7F11;     /* Match border with background */
+}
+
+.watchlist-container.active .watchlist-text {
+    color: #fff;               /* White text for contrast */
+}
+
+.watchlist-container.active .bookmark-icon {
+    filter: brightness(0) invert(1); /* Optional: Invert icon color for better visibility */
+}
+
+  .tag-box {
+    width: 88px;
+    height: 34px;
+    background-color: #FF7F11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tag-text {
+    color: white;
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+  }
+  
+
+  /* Main header styling */
+.homepage-header {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 1rem 0;
+    font-family: "Noto Sans JP", sans-serif;
+    border: 10px solid #ff6600; /* Orange border */
+    border-radius: 15px; /* Rounded corners */
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Adds space between navigation items */
+}
+
+.nav-item {
+    display: inline-flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ccc; /* Subtle hover effect */
+}
+
+/* Search Container Styling */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 0; /* Removed extra margin so it stays close to the Watchlist */
+}
+
+.search-input {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 15px;
+}
+
+.search-button {
+    padding: 8px;
+    background-color: #fd9311;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-button img {
+    width: 16px;
+    height: 16px;
+}
+
+/* Login and download links */
+.login-download {
+    margin-top: 10px;
+    color: #fff;
+}
+
+.login-download a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.login-download a:hover {
+    color: #ccc;
+}
+
+/* Anime Details Container */
+.anime-details-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .anime-details-container .row {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* Anime Image */
+#anime-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Anime Title */
+#anime-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Watchlist Container */
+.watchlist-container {
+    /* Removed absolute positioning */
+    position: relative;
+    border: 1.5px solid #FF7F11;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(255, 127, 17, 0.1); /* Optional: Light background for visibility */
+    width: fit-content;
+    margin-bottom: 1rem; /* Added space below watchlist button */
+}
+
+.bookmark-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.watchlist-text {
+    color: #FF7F11;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+
+/* Anime Description */
+#anime-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Genre Tags */
+
+
+.tag-box {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.tag-text {
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+    #anime-title {
+        font-size: 2rem;
+    }
+
+    .watchlist-text {
+        font-size: 1rem;
+    }
+
+    #anime-description {
+        font-size: 0.9rem;
+    }
+
+    .tag-text {
+        font-size: 0.8rem;
+    }
+
+    /* Adjust watchlist-container width */
+    .watchlist-container {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Loading Indicator */
+#loading-indicator {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 50px;
+}
+
+/* Additional Styles */
+
+/* Ensuring Images in Movie Library are Consistent */
+.movie-fixed-size {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
