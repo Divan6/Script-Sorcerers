@@ -116,7 +116,6 @@ function addToWatchlist(anime) {
         console.log(`Anime added to watchlist: ${anime.title}`);
         console.log("Updated Watchlist:", watchlist); 
         
-        alert(`${anime.title} added to your watchlist!`);
     } else {
         console.log(`Anime already in watchlist: ${anime.title}`);
         alert(`${anime.title} is already in your watchlist!`);
