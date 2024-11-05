@@ -1,3 +1,7 @@
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 document.addEventListener('DOMContentLoaded', () => {
     const signUpForm = document.forms['signUp'];
     const signInForm = document.forms['signIn'];
@@ -17,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('userEmail', email);
             localStorage.setItem('userPassword', password);
             alert('Sign up successful!');
-            window.location.href = 'signin.html'; // Redirect to sign-in page
+            window.location.href = 'signin.html'; 
         });
     }
 
