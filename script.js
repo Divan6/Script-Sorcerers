@@ -1,7 +1,4 @@
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
 document.addEventListener('DOMContentLoaded', () => {
     const signUpForm = document.forms['signUp'];
     const signInForm = document.forms['signIn'];
