@@ -882,3 +882,48 @@ fieldset {
     object-fit: cover;
 }
 
+
+/* css/single.css */
+
+/* Existing Watchlist Container Styles */
+.watchlist-container {
+    border: 1.5px solid #FF7F11;
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+    cursor: pointer;
+    position: relative; /* Changed from absolute to relative */
+    margin-bottom: 1rem; /* Added space below watchlist button */
+}
+
+/* Rating Stars */
+.rating-stars {
+    display: flex;
+    gap: 5px;
+}
+
+.rating-stars .star {
+    font-size: 20px;
+    color: #FFD700; /* Gold color for stars */
+}
+
+/* Ensure the parent container aligns items horizontally */
+.watchlist-and-rating {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adjust spacing between watchlist button and stars as needed */
+}
+
+/* Style for Rating Stars */
+.rating-stars .star {
+    font-size: 20px;
+    color: #FFD700; /* Gold color for stars */
+    margin-right: 4px; /* Space between stars */
+}
+
+/* Optional: Adjust the size of the stars on different screen sizes */
+@media (max-width: 767.98px) {
+    .rating-stars .star {
+        font-size: 18px;
+    }
+}

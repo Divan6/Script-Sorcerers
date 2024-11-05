@@ -32,6 +32,7 @@
                             </li>
                             <li class="nav-item"><a href="#" class="nav-link">Anime</a></li>
                             
+                            <!-- Updated Anime Section with Dropdown -->
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" id="animeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Genres</a>
                                 <ul class="dropdown-menu" aria-labelledby="animeDropdown">
@@ -58,6 +59,7 @@
                                 </a>
                             </li>
                             
+                            <!-- Search is now part of the nav items, right after Watchlist -->
                             <li class="nav-item search-container">
                                 <form id="searchForm">
                                     <input type="text" id="searchInput" placeholder="Search..." class="search-input">
@@ -77,39 +79,57 @@
     </header>
 
     <main>
+        <!-- Loading Indicator -->
         <div id="loading-indicator" class="text-center my-5">
             <p>Loading...</p>
         </div>
 
+        <!-- Anime Details Container -->
         <div class="anime-details-container container my-5" style="display: none;">
             <div class="row">
+                <!-- Anime Image -->
                 <div class="col-md-4">
                     <img id="anime-image" src="" alt="Anime Image" class="img-fluid rounded">
                 </div>
 
+                <!-- Anime Information -->
                 <div class="col-md-8">
                     <h1 id="anime-title">Anime Title</h1>
 
-                    <div class="watchlist-container d-flex align-items-center my-3">
-                        <img class="bookmark-icon me-2" src="../assets/images/bookmark.svg" alt="Bookmark Icon">
-                        <span class="watchlist-text">Add To Watchlist</span>
+                    <!-- Add to Watchlist Button and Rating Stars -->
+                    <div class="watchlist-and-rating d-flex align-items-center my-3">
+                        <!-- Watchlist Button -->
+                        <div class="watchlist-container d-flex align-items-center">
+                            <img class="bookmark-icon me-2" src="../assets/images/bookmark.svg" alt="Bookmark Icon">
+                            <span class="watchlist-text">Add to Watchlist</span>
+                        </div>
+
+                        <!-- Rating Stars -->
+                        <div class="rating-stars ms-4">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
                     </div>
 
+                    <!-- Anime Description -->
                     <div id="anime-description" class="mb-4">
                         Loading description...
                     </div>
 
+                    <!-- Genre Tags -->
                     <div class="tag-container">
+                        <!-- Genre tags will be appended here dynamically -->
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-<main>
-
-
     <footer>
+        <!-- Your footer content -->
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
