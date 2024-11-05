@@ -1,52 +1,6 @@
 console.log("Linked")
-// API
-// const myHeaders = new Headers();
-// myHeaders.append("x-apihub-key", "qRpABCZsUymYdltQ4uvdJwgKvBH3dmTPKVQqYi2CGAsKafLFgO");
-// myHeaders.append("x-apihub-host", "AnimeList-API.allthingsdev.co");
-// myHeaders.append("x-apihub-endpoint", "10b0d633-40f8-43ee-af7f-812833c933a1");
 
-// const requestOptions = {
-//    method: "GET",
-//    headers: myHeaders,
-//    redirect: "follow"
-// };
-
-// !async function name(params) {
-    
-// }
-
-// !async function ()
-// {
-//     let data = await fetch("https://AnimeList-API.proxy-production.allthingsdev.co/v4/anime?q=Naruto", requestOptions)
-//         .then((response) => response.text())
-//         .then((result) => 
-//         { 
-//             return result;
-//         }
-//     )
-//     .catch((error) => console.error(error));
-
-//     DisplayMovies(data);
-// }();
-
-
-// function DisplayMovies(dataToDisplay)
-// {
-//     let animeObject = JSON.parse(dataToDisplay);
-//     console.log(animeObject.data);
-    
-//     if (Array.isArray(animeObject.data)) {
-//         animeObject.data.forEach(anime => {
-//             // Log the title of each anime
-//             console.log(anime.title);
-//             console.log(anime.images);
-//         });
-//     } else {
-//         console.error("Data is not an array.");
-//     }
-// }
-
-// API Configuration
+// API 
 const myHeaders = new Headers();
 myHeaders.append("x-apihub-key", "qRpABCZsUymYdltQ4uvdJwgKvBH3dmTPKVQqYi2CGAsKafLFgO");
 myHeaders.append("x-apihub-host", "AnimeList-API.allthingsdev.co");
@@ -58,7 +12,7 @@ const requestOptions = {
     redirect: "follow"
 };
 
-// Fetch Anime Data
+
 async function fetchAnimeData() {
     try {
         const response = await fetch("https://AnimeList-API.proxy-production.allthingsdev.co/v4/anime", requestOptions);
@@ -69,7 +23,7 @@ async function fetchAnimeData() {
     }
 }
 
-// Display Anime Carousel with 4 images per slide
+// Display 4 images per slide
 function displayAnimeCarousel(animeList) {
     const carouselInner = document.getElementById("animeCarouselInner");
     for (let i = 0; i < animeList.length; i += 4) {
@@ -151,7 +105,7 @@ function displayAnimeCarousel(animeList) {
     }
 }
 
-// Function to add anime to watchlist and store in localStorage
+// add to watchlist and store in localStorage
 function addToWatchlist(anime) {
     const watchlist = JSON.parse(localStorage.getItem("animeWatchlist")) || [];
 
@@ -162,7 +116,7 @@ function addToWatchlist(anime) {
         console.log(`Anime added to watchlist: ${anime.title}`);
         console.log("Updated Watchlist:", watchlist); 
         
-        
+        alert(`${anime.title} added to your watchlist!`);
     } else {
         console.log(`Anime already in watchlist: ${anime.title}`);
         alert(`${anime.title} is already in your watchlist!`);
@@ -173,7 +127,7 @@ fetchAnimeData();
 
 //Watchlist code
 
-// Function to display the watchlist from localStorage
+// display the watchlist from localStorage
 function displayWatchlist() {
     const watchlistContainer = document.getElementById("watchlistContainer");
     const watchlistCount = document.getElementById("watchlistCount");
@@ -191,45 +145,38 @@ function displayWatchlist() {
     }
 
     watchlist.forEach(anime => {
-        // Create a div to hold each anime item
         const animeDiv = document.createElement("div");
-        animeDiv.classList.add("anime-item");
-
-        // Display anime title and image
+        animeDiv.classList.add("anime-item", "d-flex", "flex-column", "justify-content-between");
+    
         const animeTitle = document.createElement("h5");
         animeTitle.textContent = anime.title;
-
+    
         const animeImg = document.createElement("img");
         animeImg.src = anime.images.jpg.image_url;
         animeImg.alt = anime.title;
         animeImg.classList.add("anime-thumbnail");
-
-        // Navigate to a detailed page (if applicable)
+    
         animeImg.addEventListener("click", () => {
             window.location.href = `SinglemoviePage.html?id=${anime.mal_id}`;
         });
-
-        // Remove button
+    
         const removeButton = document.createElement("button");
         removeButton.textContent = "Remove";
-        removeButton.classList.add("remove-button");
-
-        // Remove button click event
+        removeButton.classList.add("remove-button", "mt-auto");
+    
         removeButton.addEventListener("click", () => {
             removeFromWatchlist(anime.mal_id);
         });
-
-        // Append elements to animeDiv
+    
         animeDiv.appendChild(animeImg);
         animeDiv.appendChild(animeTitle);
         animeDiv.appendChild(removeButton);
-
-        // Add the animeDiv to the container
         watchlistContainer.appendChild(animeDiv);
+    
     });
 }
 
-// Function to remove an anime from the watchlist
+// remove an anime from the watchlist
 function removeFromWatchlist(animeId) {
     let watchlist = JSON.parse(localStorage.getItem("animeWatchlist")) || [];
 
@@ -243,12 +190,12 @@ function removeFromWatchlist(animeId) {
     displayWatchlist();
 }
 
-// Initialize display of watchlist when page loads
+// display of watchlist when page loads
 document.addEventListener("DOMContentLoaded", displayWatchlist);
 
 
 
-
+// Home page and search 
 
 // form submission
 document.getElementById('newsletter-form').addEventListener('submit', function(event) {
@@ -268,16 +215,15 @@ document.getElementById('newsletter-form').addEventListener('submit', function(e
     }
 });
 
-
 // searching and scrolling 
 document.getElementById('searchForm').addEventListener('submit', function(event) {
     event.preventDefault(); 
     
-    const searchQuery = document.getElementById('searchInput').value.trim().toLowerCase(); // Get and normalize search query
+    const searchQuery = document.getElementById('searchInput').value.trim().toLowerCase(); 
     const headings = document.querySelectorAll('h5'); 
     let found = false;
 
-    // Loop through each h5 element to find a match
+    // Loop each h5 element to find a match
     headings.forEach((heading) => {
         if (heading.textContent.toLowerCase().includes(searchQuery)) {
             heading.scrollIntoView({ behavior: 'smooth', block: 'center' }); 
@@ -295,3 +241,52 @@ document.getElementById('searchForm').addEventListener('submit', function(event)
         alert('No matching results found');
     }
 });
+
+// Sign up and in
+
+document.addEventListener('DOMContentLoaded', () => {
+    const signUpForm = document.forms['signUp'];
+    const signInForm = document.forms['signIn'];
+
+    if (signUpForm) {
+        signUpForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const email = signUpForm['email'].value;
+            const password = signUpForm['password'].value;
+            const confirmPassword = signUpForm['cnfm'].value;
+            const username = signUpForm['username'].value; 
+
+            if (password !== confirmPassword) {
+                alert('Passwords do not match!');
+                return;
+            }
+
+            localStorage.setItem('userEmail', email);
+            localStorage.setItem('userPassword', password);
+            localStorage.setItem('username', username); 
+            alert('Sign up successful!');
+            window.location.href = 'signin.html'; 
+        });
+    }
+
+    if (signInForm) {
+        signInForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const email = signInForm['email'].value;
+            const password = signInForm['password'].value;
+
+            const storedEmail = localStorage.getItem('userEmail');
+            const storedPassword = localStorage.getItem('userPassword');
+
+            if (email === storedEmail && password === storedPassword) {
+                alert('Sign in successful!');
+                window.location.href = 'index.html';
+            } else {
+                alert('Invalid email or password!');
+            }
+
+            
+        });
+    }
+});
+
